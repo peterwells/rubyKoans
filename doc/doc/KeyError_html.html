@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>KeyError.html - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="../README_md.html">README</a>
+  
+    <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../doc/AboutArrayAssignment_html.html">AboutArrayAssignment.html</a>
+  
+    <li class="file"><a href="../doc/AboutArrays_html.html">AboutArrays.html</a>
+  
+    <li class="file"><a href="../doc/AboutAsserts_html.html">AboutAsserts.html</a>
+  
+    <li class="file"><a href="../doc/AboutBlocks_html.html">AboutBlocks.html</a>
+  
+    <li class="file"><a href="../doc/AboutClassMethods_html.html">AboutClassMethods.html</a>
+  
+    <li class="file"><a href="../doc/AboutClassMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutClassMethods/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses_html.html">AboutClasses.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog3_html.html">Dog3.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog4_html.html">Dog4.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog5_html.html">Dog5.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog6_html.html">Dog6.html</a>
+  
+    <li class="file"><a href="../doc/AboutClasses/Dog7_html.html">Dog7.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants_html.html">AboutConstants.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/Animal_html.html">Animal.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/Animal/NestedAnimal_html.html">NestedAnimal.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/MyAnimals_html.html">MyAnimals.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/MyAnimals/Bird_html.html">Bird.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/MyAnimals/Oyster_html.html">Oyster.html</a>
+  
+    <li class="file"><a href="../doc/AboutConstants/Reptile_html.html">Reptile.html</a>
+  
+    <li class="file"><a href="../doc/AboutControlStatements_html.html">AboutControlStatements.html</a>
+  
+    <li class="file"><a href="../doc/AboutDiceProject_html.html">AboutDiceProject.html</a>
+  
+    <li class="file"><a href="../doc/AboutExceptions_html.html">AboutExceptions.html</a>
+  
+    <li class="file"><a href="../doc/AboutExceptions/MySpecialError_html.html">MySpecialError.html</a>
+  
+    <li class="file"><a href="../doc/AboutHashes_html.html">AboutHashes.html</a>
+  
+    <li class="file"><a href="../doc/AboutInheritance_html.html">AboutInheritance.html</a>
+  
+    <li class="file"><a href="../doc/AboutInheritance/BullDog_html.html">BullDog.html</a>
+  
+    <li class="file"><a href="../doc/AboutInheritance/Chihuahua_html.html">Chihuahua.html</a>
+  
+    <li class="file"><a href="../doc/AboutInheritance/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutInheritance/GreatDane_html.html">GreatDane.html</a>
+  
+    <li class="file"><a href="../doc/AboutIteration_html.html">AboutIteration.html</a>
+  
+    <li class="file"><a href="../doc/AboutJavaInterop_html.html">AboutJavaInterop.html</a>
+  
+    <li class="file"><a href="../doc/AboutJavaInterop/Java_html.html">Java.html</a>
+  
+    <li class="file"><a href="../doc/AboutJavaInterop/Java/JavaUtil_html.html">JavaUtil.html</a>
+  
+    <li class="file"><a href="../doc/AboutJavaInterop/Java/JavaUtil/ArrayList_html.html">ArrayList.html</a>
+  
+    <li class="file"><a href="../doc/AboutMessagePassing_html.html">AboutMessagePassing.html</a>
+  
+    <li class="file"><a href="../doc/AboutMessagePassing/AllMessageCatcher_html.html">AllMessageCatcher.html</a>
+  
+    <li class="file"><a href="../doc/AboutMessagePassing/MessageCatcher_html.html">MessageCatcher.html</a>
+  
+    <li class="file"><a href="../doc/AboutMessagePassing/TypicalObject_html.html">TypicalObject.html</a>
+  
+    <li class="file"><a href="../doc/AboutMessagePassing/WellBehavedFooCatcher_html.html">WellBehavedFooCatcher.html</a>
+  
+    <li class="file"><a href="../doc/AboutMethods_html.html">AboutMethods.html</a>
+  
+    <li class="file"><a href="../doc/AboutMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutModules_html.html">AboutModules.html</a>
+  
+    <li class="file"><a href="../doc/AboutModules/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutModules/Nameable_html.html">Nameable.html</a>
+  
+    <li class="file"><a href="../doc/AboutNil_html.html">AboutNil.html</a>
+  
+    <li class="file"><a href="../doc/AboutObjects_html.html">AboutObjects.html</a>
+  
+    <li class="file"><a href="../doc/AboutOpenClasses_html.html">AboutOpenClasses.html</a>
+  
+    <li class="file"><a href="../doc/AboutOpenClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutProxyObjectProject_html.html">AboutProxyObjectProject.html</a>
+  
+    <li class="file"><a href="../doc/AboutRegularExpressions_html.html">AboutRegularExpressions.html</a>
+  
+    <li class="file"><a href="../doc/AboutSandwichCode_html.html">AboutSandwichCode.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope_html.html">AboutScope.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope/Jims_html.html">Jims.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope/Jims/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope/Joes_html.html">Joes.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope/Joes/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../doc/AboutScope/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../doc/AboutScoringProject_html.html">AboutScoringProject.html</a>
+  
+    <li class="file"><a href="../doc/AboutStrings_html.html">AboutStrings.html</a>
+  
+    <li class="file"><a href="../doc/AboutSymbols_html.html">AboutSymbols.html</a>
+  
+    <li class="file"><a href="../doc/AboutToStr_html.html">AboutToStr.html</a>
+  
+    <li class="file"><a href="../doc/AboutToStr/CanBeTreatedAsString_html.html">CanBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../doc/AboutToStr/CanNotBeTreatedAsString_html.html">CanNotBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../doc/AboutTriangleProject_html.html">AboutTriangleProject.html</a>
+  
+    <li class="file"><a href="../doc/AboutTriangleProject2_html.html">AboutTriangleProject2.html</a>
+  
+    <li class="file"><a href="../doc/AboutTrueAndFalse_html.html">AboutTrueAndFalse.html</a>
+  
+    <li class="file"><a href="../doc/FillMeInError_html.html">FillMeInError.html</a>
+  
+    <li class="file"><a href="../doc/GREED_RULES_txt_html.html">GREED_RULES_txt.html</a>
+  
+    <li class="file"><a href="../doc/Integer_html.html">Integer.html</a>
+  
+    <li class="file"><a href="../doc/KeyError_html.html">KeyError.html</a>
+  
+    <li class="file"><a href="../doc/Neo_html.html">Neo.html</a>
+  
+    <li class="file"><a href="../doc/Neo/Color_html.html">Color.html</a>
+  
+    <li class="file"><a href="../doc/Neo/Koan_html.html">Koan.html</a>
+  
+    <li class="file"><a href="../doc/Neo/Sensei_html.html">Sensei.html</a>
+  
+    <li class="file"><a href="../doc/Neo/ThePath_html.html">ThePath.html</a>
+  
+    <li class="file"><a href="../doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="../doc/Proxy_html.html">Proxy.html</a>
+  
+    <li class="file"><a href="../doc/README_md_html.html">README_md.html</a>
+  
+    <li class="file"><a href="../doc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../doc/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../doc/Television_html.html">Television.html</a>
+  
+    <li class="file"><a href="../doc/TelevisionTest_html.html">TelevisionTest.html</a>
+  
+    <li class="file"><a href="../doc/TriangleError_html.html">TriangleError.html</a>
+  
+    <li class="file"><a href="../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../doc/example_file_txt_html.html">example_file_txt.html</a>
+  
+    <li class="file"><a href="../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../doc/koans_watchr_html.html">koans_watchr.html</a>
+  
+    <li class="file"><a href="../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../example_file_txt.html">example_file</a>
+  
+    <li class="file"><a href="../koans_watchr.html">koans.watchr</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="../AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="../AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="../AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="../AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="../AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="../AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="../AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="../AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="../AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="../AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="../AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="../AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="../AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="../AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="../AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="../AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="../AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="../AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="../AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="../AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="../AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="../AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="../AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="../AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="../AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="../AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="../AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="../AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="../AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="../AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="../AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="../AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="../AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="../AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="../AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="../AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="../AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="../AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="../AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="../AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="../AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="../AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="../AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="../AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="../AboutModules.html">AboutModules</a>
+  
+    <li><a href="../AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="../AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="../AboutNil.html">AboutNil</a>
+  
+    <li><a href="../AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="../AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="../AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="../AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="../AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="../AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="../AboutScope.html">AboutScope</a>
+  
+    <li><a href="../AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="../AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="../AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="../AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="../AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="../AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="../AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="../AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="../AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="../AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="../AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="../AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="../AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="../AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="../FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="../Integer.html">Integer</a>
+  
+    <li><a href="../KeyError.html">KeyError</a>
+  
+    <li><a href="../Neo.html">Neo</a>
+  
+    <li><a href="../Neo/Color.html">Neo::Color</a>
+  
+    <li><a href="../Neo/Koan.html">Neo::Koan</a>
+  
+    <li><a href="../Neo/Sensei.html">Neo::Sensei</a>
+  
+    <li><a href="../Neo/ThePath.html">Neo::ThePath</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Proxy.html">Proxy</a>
+  
+    <li><a href="../String.html">String</a>
+  
+    <li><a href="../Television.html">Television</a>
+  
+    <li><a href="../TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="../TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta content=“text/html; charset=UTF-8”
+http-equiv=“Content-Type”&gt;</p>
+
+<p>&lt;title&gt;class <a href="../KeyError.html">KeyError</a> - RDoc
+Documentation&lt;/title&gt;</p>
+
+<p>&lt;link type=“text/css” media=“screen” href=“./rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;./&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script type=“text/javascript” charset=“utf-8”
+src=“./js/jquery.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“./js/navigation.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/search_index.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/search.js”&gt;&lt;/script&gt; &lt;script type=“text/javascript”
+charset=“utf-8” src=“./js/searcher.js”&gt;&lt;/script&gt; &lt;script
+type=“text/javascript” charset=“utf-8”
+src=“./js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body id=“top” class=“class”&gt; &lt;nav id=“metadata”&gt;</p>
+
+<pre>&lt;nav id=&quot;home-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;
+  &lt;a href=&quot;./index.html&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/h3&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;nav id=&quot;search-section&quot; class=&quot;section project-section&quot; class=&quot;initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;h3 class=&quot;section-header&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/h3&gt;
+&lt;/form&gt;
+
+&lt;ul id=&quot;search-results&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;div id=&quot;file-metadata&quot;&gt;
+  &lt;nav id=&quot;file-list-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Defined In&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;neo.rb
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;class-metadata&quot;&gt;
+
+  &lt;nav id=&quot;parent-class-section&quot; class=&quot;section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Parent&lt;/h3&gt;
+
+&lt;p class=&quot;link&quot;&gt;StandardError</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;project-metadata&quot;&gt;
+  &lt;nav id=&quot;fileindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Pages&lt;/h3&gt;
+
+&lt;ul&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./GREED_RULES_txt.html&quot;&gt;GREED_RULES&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./README_md.html&quot;&gt;README&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./README_rdoc.html&quot;&gt;README&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./doc/created_rid.html&quot;&gt;created.rid&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./example_file_txt.html&quot;&gt;example_file&lt;/a&gt;
+
+  &lt;li class=&quot;file&quot;&gt;&lt;a href=&quot;./koans_watchr.html&quot;&gt;koans.watchr&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>  &lt;nav id=&quot;classindex-section&quot; class=&quot;section project-section&quot;&gt;
+&lt;h3 class=&quot;section-header&quot;&gt;Class and Module Index&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot;&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutArrayAssignment.html&quot;&gt;AboutArrayAssignment&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutArrays.html&quot;&gt;AboutArrays&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutAsserts.html&quot;&gt;AboutAsserts&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutBlocks.html&quot;&gt;AboutBlocks&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClassMethods.html&quot;&gt;AboutClassMethods&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClassMethods/Dog.html&quot;&gt;AboutClassMethods::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClassMethods/Dog2.html&quot;&gt;AboutClassMethods::Dog2&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClassMethods/Dog.html&quot;&gt;AboutClassMethods::LastExpressionInClassStatement&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses.html&quot;&gt;AboutClasses&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog.html&quot;&gt;AboutClasses::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog2.html&quot;&gt;AboutClasses::Dog2&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog3.html&quot;&gt;AboutClasses::Dog3&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog4.html&quot;&gt;AboutClasses::Dog4&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog5.html&quot;&gt;AboutClasses::Dog5&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog6.html&quot;&gt;AboutClasses::Dog6&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutClasses/Dog7.html&quot;&gt;AboutClasses::Dog7&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants.html&quot;&gt;AboutConstants&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/Animal.html&quot;&gt;AboutConstants::Animal&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/Animal/NestedAnimal.html&quot;&gt;AboutConstants::Animal::NestedAnimal&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/MyAnimals.html&quot;&gt;AboutConstants::MyAnimals&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/MyAnimals/Bird.html&quot;&gt;AboutConstants::MyAnimals::Bird&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/MyAnimals/Oyster.html&quot;&gt;AboutConstants::MyAnimals::Oyster&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutConstants/Reptile.html&quot;&gt;AboutConstants::Reptile&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutControlStatements.html&quot;&gt;AboutControlStatements&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutDiceProject.html&quot;&gt;AboutDiceProject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutExceptions.html&quot;&gt;AboutExceptions&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutExceptions/MySpecialError.html&quot;&gt;AboutExceptions::MySpecialError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutHashes.html&quot;&gt;AboutHashes&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutInheritance.html&quot;&gt;AboutInheritance&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutInheritance/BullDog.html&quot;&gt;AboutInheritance::BullDog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutInheritance/Chihuahua.html&quot;&gt;AboutInheritance::Chihuahua&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutInheritance/Dog.html&quot;&gt;AboutInheritance::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutInheritance/GreatDane.html&quot;&gt;AboutInheritance::GreatDane&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutIteration.html&quot;&gt;AboutIteration&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutJavaInterop.html&quot;&gt;AboutJavaInterop&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutJavaInterop/Java.html&quot;&gt;AboutJavaInterop::Java&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutJavaInterop/Java/JavaUtil.html&quot;&gt;AboutJavaInterop::Java::JavaUtil&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutJavaInterop/Java/JavaUtil/ArrayList.html&quot;&gt;AboutJavaInterop::Java::JavaUtil::ArrayList&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMessagePassing.html&quot;&gt;AboutMessagePassing&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMessagePassing/AllMessageCatcher.html&quot;&gt;AboutMessagePassing::AllMessageCatcher&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMessagePassing/MessageCatcher.html&quot;&gt;AboutMessagePassing::MessageCatcher&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMessagePassing/TypicalObject.html&quot;&gt;AboutMessagePassing::TypicalObject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMessagePassing/WellBehavedFooCatcher.html&quot;&gt;AboutMessagePassing::WellBehavedFooCatcher&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMethods.html&quot;&gt;AboutMethods&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutMethods/Dog.html&quot;&gt;AboutMethods::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutModules.html&quot;&gt;AboutModules&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutModules/Dog.html&quot;&gt;AboutModules::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutModules/Nameable.html&quot;&gt;AboutModules::Nameable&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutNil.html&quot;&gt;AboutNil&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutObjects.html&quot;&gt;AboutObjects&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutOpenClasses.html&quot;&gt;AboutOpenClasses&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutOpenClasses/Dog.html&quot;&gt;AboutOpenClasses::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutProxyObjectProject.html&quot;&gt;AboutProxyObjectProject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutRegularExpressions.html&quot;&gt;AboutRegularExpressions&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutSandwichCode.html&quot;&gt;AboutSandwichCode&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope.html&quot;&gt;AboutScope&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope/Jims.html&quot;&gt;AboutScope::Jims&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope/Jims/Dog.html&quot;&gt;AboutScope::Jims::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope/Joes.html&quot;&gt;AboutScope::Joes&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope/Joes/Dog.html&quot;&gt;AboutScope::Joes::Dog&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScope/String.html&quot;&gt;AboutScope::String&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutScoringProject.html&quot;&gt;AboutScoringProject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutStrings.html&quot;&gt;AboutStrings&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutSymbols.html&quot;&gt;AboutSymbols&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutToStr.html&quot;&gt;AboutToStr&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutToStr/CanBeTreatedAsString.html&quot;&gt;AboutToStr::CanBeTreatedAsString&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutToStr/CanNotBeTreatedAsString.html&quot;&gt;AboutToStr::CanNotBeTreatedAsString&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutTriangleProject.html&quot;&gt;AboutTriangleProject&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutTriangleProject2.html&quot;&gt;AboutTriangleProject2&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./AboutTrueAndFalse.html&quot;&gt;AboutTrueAndFalse&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./FillMeInError.html&quot;&gt;FillMeInError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Integer.html&quot;&gt;Integer&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./KeyError.html&quot;&gt;KeyError&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Neo.html&quot;&gt;Neo&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Neo/Color.html&quot;&gt;Neo::Color&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Neo/Koan.html&quot;&gt;Neo::Koan&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Neo/Sensei.html&quot;&gt;Neo::Sensei&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Neo/ThePath.html&quot;&gt;Neo::ThePath&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Object.html&quot;&gt;Object&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Proxy.html&quot;&gt;Proxy&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./String.html&quot;&gt;String&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./Television.html&quot;&gt;Television&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./TelevisionTest.html&quot;&gt;TelevisionTest&lt;/a&gt;
+
+  &lt;li&gt;&lt;a href=&quot;./TriangleError.html&quot;&gt;TriangleError&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;div id=“documentation”&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-identifier">h1</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;class&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">class</span> <span class="ruby-constant">KeyError</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h1&gt;
+
+&lt;div id=&quot;description&quot; class=&quot;description&quot;&gt;
+
+&lt;/</span><span class="ruby-identifier">div</span><span class="ruby-operator">&gt;</span><span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-identifier">description</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">section</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;5Buntitled-5D&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;documentation-section&quot;</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Methods</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/section&gt;&lt;!-- 5Buntitled-5D --&gt;
+</span></pre>
+
+<p>&lt;/div&gt;&lt;!– documentation –&gt;</p>
+
+<p>&lt;footer id=“validator-badges”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;[Validate]&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;https://github.com/rdoc/rdoc&quot;&gt;RDoc&lt;/a&gt; 4.0.0.
+&lt;p&gt;Generated with the &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish Rdoc Generator&lt;/a&gt; 3.</pre>
+
+<p>&lt;/footer&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>darkfish.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="../../README_md.html">README</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../doc/AboutArrayAssignment_html.html">AboutArrayAssignment.html</a>
+  
+    <li class="file"><a href="../../doc/AboutArrays_html.html">AboutArrays.html</a>
+  
+    <li class="file"><a href="../../doc/AboutAsserts_html.html">AboutAsserts.html</a>
+  
+    <li class="file"><a href="../../doc/AboutBlocks_html.html">AboutBlocks.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods_html.html">AboutClassMethods.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses_html.html">AboutClasses.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog3_html.html">Dog3.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog4_html.html">Dog4.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog5_html.html">Dog5.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog6_html.html">Dog6.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog7_html.html">Dog7.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants_html.html">AboutConstants.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Animal_html.html">Animal.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Animal/NestedAnimal_html.html">NestedAnimal.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals_html.html">MyAnimals.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals/Bird_html.html">Bird.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals/Oyster_html.html">Oyster.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Reptile_html.html">Reptile.html</a>
+  
+    <li class="file"><a href="../../doc/AboutControlStatements_html.html">AboutControlStatements.html</a>
+  
+    <li class="file"><a href="../../doc/AboutDiceProject_html.html">AboutDiceProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutExceptions_html.html">AboutExceptions.html</a>
+  
+    <li class="file"><a href="../../doc/AboutExceptions/MySpecialError_html.html">MySpecialError.html</a>
+  
+    <li class="file"><a href="../../doc/AboutHashes_html.html">AboutHashes.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance_html.html">AboutInheritance.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/BullDog_html.html">BullDog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/Chihuahua_html.html">Chihuahua.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/GreatDane_html.html">GreatDane.html</a>
+  
+    <li class="file"><a href="../../doc/AboutIteration_html.html">AboutIteration.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop_html.html">AboutJavaInterop.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java_html.html">Java.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java/JavaUtil_html.html">JavaUtil.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java/JavaUtil/ArrayList_html.html">ArrayList.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing_html.html">AboutMessagePassing.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/AllMessageCatcher_html.html">AllMessageCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/MessageCatcher_html.html">MessageCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/TypicalObject_html.html">TypicalObject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/WellBehavedFooCatcher_html.html">WellBehavedFooCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMethods_html.html">AboutMethods.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules_html.html">AboutModules.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules/Nameable_html.html">Nameable.html</a>
+  
+    <li class="file"><a href="../../doc/AboutNil_html.html">AboutNil.html</a>
+  
+    <li class="file"><a href="../../doc/AboutObjects_html.html">AboutObjects.html</a>
+  
+    <li class="file"><a href="../../doc/AboutOpenClasses_html.html">AboutOpenClasses.html</a>
+  
+    <li class="file"><a href="../../doc/AboutOpenClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutProxyObjectProject_html.html">AboutProxyObjectProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutRegularExpressions_html.html">AboutRegularExpressions.html</a>
+  
+    <li class="file"><a href="../../doc/AboutSandwichCode_html.html">AboutSandwichCode.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope_html.html">AboutScope.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Jims_html.html">Jims.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Jims/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Joes_html.html">Joes.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Joes/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScoringProject_html.html">AboutScoringProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutStrings_html.html">AboutStrings.html</a>
+  
+    <li class="file"><a href="../../doc/AboutSymbols_html.html">AboutSymbols.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr_html.html">AboutToStr.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr/CanBeTreatedAsString_html.html">CanBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr/CanNotBeTreatedAsString_html.html">CanNotBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTriangleProject_html.html">AboutTriangleProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTriangleProject2_html.html">AboutTriangleProject2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTrueAndFalse_html.html">AboutTrueAndFalse.html</a>
+  
+    <li class="file"><a href="../../doc/FillMeInError_html.html">FillMeInError.html</a>
+  
+    <li class="file"><a href="../../doc/GREED_RULES_txt_html.html">GREED_RULES_txt.html</a>
+  
+    <li class="file"><a href="../../doc/Integer_html.html">Integer.html</a>
+  
+    <li class="file"><a href="../../doc/KeyError_html.html">KeyError.html</a>
+  
+    <li class="file"><a href="../../doc/Neo_html.html">Neo.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Color_html.html">Color.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Koan_html.html">Koan.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Sensei_html.html">Sensei.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/ThePath_html.html">ThePath.html</a>
+  
+    <li class="file"><a href="../../doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="../../doc/Proxy_html.html">Proxy.html</a>
+  
+    <li class="file"><a href="../../doc/README_md_html.html">README_md.html</a>
+  
+    <li class="file"><a href="../../doc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../../doc/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../../doc/Television_html.html">Television.html</a>
+  
+    <li class="file"><a href="../../doc/TelevisionTest_html.html">TelevisionTest.html</a>
+  
+    <li class="file"><a href="../../doc/TriangleError_html.html">TriangleError.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/example_file_txt_html.html">example_file_txt.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../doc/koans_watchr_html.html">koans_watchr.html</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../example_file_txt.html">example_file</a>
+  
+    <li class="file"><a href="../../koans_watchr.html">koans.watchr</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="../../AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="../../AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="../../AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="../../AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="../../AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="../../AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="../../AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="../../AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="../../AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="../../AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="../../AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="../../AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="../../AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="../../AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="../../AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="../../AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="../../AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="../../AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="../../AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="../../AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="../../AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="../../AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="../../AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="../../AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="../../AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="../../AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="../../AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="../../AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="../../AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="../../AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="../../AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="../../AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="../../AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="../../AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="../../AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="../../AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="../../AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="../../AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="../../AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="../../AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="../../AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="../../AboutModules.html">AboutModules</a>
+  
+    <li><a href="../../AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="../../AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="../../AboutNil.html">AboutNil</a>
+  
+    <li><a href="../../AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="../../AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="../../AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="../../AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="../../AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="../../AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="../../AboutScope.html">AboutScope</a>
+  
+    <li><a href="../../AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="../../AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="../../AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="../../AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="../../AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="../../AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="../../AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="../../AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="../../AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="../../AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="../../AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="../../AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="../../AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="../../AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="../../FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="../../Integer.html">Integer</a>
+  
+    <li><a href="../../KeyError.html">KeyError</a>
+  
+    <li><a href="../../Neo.html">Neo</a>
+  
+    <li><a href="../../Neo/Color.html">Neo::Color</a>
+  
+    <li><a href="../../Neo/Koan.html">Neo::Koan</a>
+  
+    <li><a href="../../Neo/Sensei.html">Neo::Sensei</a>
+  
+    <li><a href="../../Neo/ThePath.html">Neo::ThePath</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../Proxy.html">Proxy</a>
+  
+    <li><a href="../../String.html">String</a>
+  
+    <li><a href="../../Television.html">Television</a>
+  
+    <li><a href="../../TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="../../TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<pre>Darkfish Page Functions
+$Id: darkfish.js 53 2009-01-07 02:52:03Z deveiant $
+
+Author: Michael Granger &lt;mgranger@laika.com&gt;
+
+Provide console simulation for firebug-less environments</pre>
+
+<p>if (!(“console” in window) || !(“firebug” in console)) {</p>
+
+<pre>var names = [&quot;log&quot;, &quot;debug&quot;, &quot;info&quot;, &quot;warn&quot;, &quot;error&quot;, &quot;assert&quot;, &quot;dir&quot;, &quot;dirxml&quot;,
+  &quot;group&quot;, &quot;groupEnd&quot;, &quot;time&quot;, &quot;timeEnd&quot;, &quot;count&quot;, &quot;trace&quot;, &quot;profile&quot;, &quot;profileEnd&quot;];
+
+window.console = {};
+for (var i = 0; i &lt; names.length; ++i)
+  window.console[names[i]] = function() {};</pre>
+
+<p>};</p>
+
+<p>/**</p>
+
+<pre> Unwrap the first element that matches the given @expr@ from the targets and return them.
+/</pre>
+
+<p>$.fn.unwrap = function( expr ) {</p>
+
+<pre>return this.each( function() {
+  $(this).parents( expr ).eq( 0 ).after( this ).remove();
+});</pre>
+
+<p>};</p>
+
+<p>function showSource( e ) {</p>
+
+<pre>var target = e.target;
+var codeSections = $(target).
+  parents(&#39;.method-detail&#39;).
+  find(&#39;.method-source-code&#39;);
+
+$(target).
+  parents(&#39;.method-detail&#39;).
+  find(&#39;.method-source-code&#39;).
+  slideToggle();</pre>
+
+<p>};</p>
+
+<p>function hookSourceViews() {</p>
+
+<pre>$(&#39;.method-heading&#39;).click( showSource );</pre>
+
+<p>};</p>
+
+<p>function toggleDebuggingSection() {</p>
+
+<pre>$(&#39;.debugging-section&#39;).slideToggle();</pre>
+
+<p>};</p>
+
+<p>function hookDebuggingToggle() {</p>
+
+<pre>$(&#39;#debugging-toggle img&#39;).click( toggleDebuggingSection );</pre>
+
+<p>};</p>
+
+<p>function hookTableOfContentsToggle() {</p>
+
+<pre>$(&#39;.indexpage li .toc-toggle&#39;).each( function() {
+  $(this).click( function() {
+    $(this).toggleClass(&#39;open&#39;);
+  });
+
+  var section = $(this).next();
+
+  $(this).click( function() {
+    section.slideToggle();
+  });
+});</pre>
+
+<p>}</p>
+
+<p>function hookSearch() {</p>
+
+<pre>var input  = $(&#39;#search-field&#39;).eq(0);
+var result = $(&#39;#search-results&#39;).eq(0);
+$(result).show();
+
+var search_section = $(&#39;#search-section&#39;).get(0);
+$(search_section).show();
+
+var search = new Search(search_data, input, result);
+
+search.renderItem = function(result) {
+  var li = document.createElement(&#39;li&#39;);
+  var html = &#39;&#39;;
+
+  // TODO add relative path to &lt;script&gt; per-page
+  html += &#39;&lt;p class=&quot;search-match&quot;&gt;&lt;a href=&quot;&#39; + rdoc_rel_prefix + result.path + &#39;&quot;&gt;&#39; + this.hlt(result.title);
+  if (result.params)
+    html += &#39;&lt;span class=&quot;params&quot;&gt;&#39; + result.params + &#39;&lt;/span&gt;&#39;;
+  html += &#39;&lt;/a&gt;&#39;;
+
+  if (result.namespace)
+    html += &#39;&lt;p class=&quot;search-namespace&quot;&gt;&#39; + this.hlt(result.namespace);
+
+  if (result.snippet)
+    html += &#39;&lt;div class=&quot;search-snippet&quot;&gt;&#39; + result.snippet + &#39;&lt;/div&gt;&#39;;
+
+  li.innerHTML = html;
+
+  return li;
+}
+
+search.select = function(result) {
+  var result_element = result.get(0);
+  window.location.href = result_element.firstChild.firstChild.href;
+}
+
+search.scrollIntoView = search.scrollInWindow;</pre>
+
+<p>};</p>
+
+<p>function highlightTarget( anchor ) {</p>
+
+<pre>console.debug( &quot;Highlighting target &#39;%s&#39;.&quot;, anchor );
+
+$(&quot;a[name]&quot;).each( function() {
+  if ( $(this).attr(&quot;name&quot;) == anchor ) {
+    if ( !$(this).parent().parent().hasClass(&#39;target-section&#39;) ) {
+      console.debug( &quot;Wrapping the target-section&quot; );
+      $(&#39;div.method-detail&#39;).unwrap( &#39;div.target-section&#39; );
+      $(this).parent().wrap( &#39;&lt;div class=&quot;target-section&quot;&gt;&lt;/div&gt;&#39; );
+    } else {
+      console.debug( &quot;Already wrapped.&quot; );
+    }
+  }
+});</pre>
+
+<p>};</p>
+
+<p>function highlightLocationTarget() {</p>
+
+<pre>console.debug( &quot;Location hash: %s&quot;, window.location.hash );
+if ( ! window.location.hash || window.location.hash.length == 0 ) return;
+
+var anchor = window.location.hash.substring(1);
+console.debug( &quot;Found anchor: %s; matching %s&quot;, anchor, &quot;a[name=&quot; + anchor + &quot;]&quot; );
+
+highlightTarget( anchor );</pre>
+
+<p>};</p>
+
+<p>function highlightClickTarget( event ) {</p>
+
+<pre>console.debug( &quot;Highlighting click target for event %o&quot;, event.target );
+try {
+  var anchor = $(event.target).attr( &#39;href&#39; ).substring(1);
+  console.debug( &quot;Found target anchor: %s&quot;, anchor );
+  highlightTarget( anchor );
+} catch ( err ) {
+  console.error( &quot;Exception while highlighting: %o&quot;, err );
+};</pre>
+
+<p>};</p>
+
+<p>$(document).ready( function() {</p>
+
+<pre>hookSourceViews();
+hookDebuggingToggle();
+hookSearch();
+highlightLocationTarget();
+hookTableOfContentsToggle();
+
+$(&#39;ul.link-list a&#39;).bind( &quot;click&quot;, highlightClickTarget );</pre>
+
+<p>});</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

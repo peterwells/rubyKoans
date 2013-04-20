@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../GREED_RULES_txt.html">GREED_RULES</a>
+  
+    <li class="file"><a href="../../README_md.html">README</a>
+  
+    <li class="file"><a href="../../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../../doc/AboutArrayAssignment_html.html">AboutArrayAssignment.html</a>
+  
+    <li class="file"><a href="../../doc/AboutArrays_html.html">AboutArrays.html</a>
+  
+    <li class="file"><a href="../../doc/AboutAsserts_html.html">AboutAsserts.html</a>
+  
+    <li class="file"><a href="../../doc/AboutBlocks_html.html">AboutBlocks.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods_html.html">AboutClassMethods.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClassMethods/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses_html.html">AboutClasses.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog2_html.html">Dog2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog3_html.html">Dog3.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog4_html.html">Dog4.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog5_html.html">Dog5.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog6_html.html">Dog6.html</a>
+  
+    <li class="file"><a href="../../doc/AboutClasses/Dog7_html.html">Dog7.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants_html.html">AboutConstants.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Animal_html.html">Animal.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Animal/NestedAnimal_html.html">NestedAnimal.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals_html.html">MyAnimals.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals/Bird_html.html">Bird.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/MyAnimals/Oyster_html.html">Oyster.html</a>
+  
+    <li class="file"><a href="../../doc/AboutConstants/Reptile_html.html">Reptile.html</a>
+  
+    <li class="file"><a href="../../doc/AboutControlStatements_html.html">AboutControlStatements.html</a>
+  
+    <li class="file"><a href="../../doc/AboutDiceProject_html.html">AboutDiceProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutExceptions_html.html">AboutExceptions.html</a>
+  
+    <li class="file"><a href="../../doc/AboutExceptions/MySpecialError_html.html">MySpecialError.html</a>
+  
+    <li class="file"><a href="../../doc/AboutHashes_html.html">AboutHashes.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance_html.html">AboutInheritance.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/BullDog_html.html">BullDog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/Chihuahua_html.html">Chihuahua.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutInheritance/GreatDane_html.html">GreatDane.html</a>
+  
+    <li class="file"><a href="../../doc/AboutIteration_html.html">AboutIteration.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop_html.html">AboutJavaInterop.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java_html.html">Java.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java/JavaUtil_html.html">JavaUtil.html</a>
+  
+    <li class="file"><a href="../../doc/AboutJavaInterop/Java/JavaUtil/ArrayList_html.html">ArrayList.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing_html.html">AboutMessagePassing.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/AllMessageCatcher_html.html">AllMessageCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/MessageCatcher_html.html">MessageCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/TypicalObject_html.html">TypicalObject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMessagePassing/WellBehavedFooCatcher_html.html">WellBehavedFooCatcher.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMethods_html.html">AboutMethods.html</a>
+  
+    <li class="file"><a href="../../doc/AboutMethods/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules_html.html">AboutModules.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutModules/Nameable_html.html">Nameable.html</a>
+  
+    <li class="file"><a href="../../doc/AboutNil_html.html">AboutNil.html</a>
+  
+    <li class="file"><a href="../../doc/AboutObjects_html.html">AboutObjects.html</a>
+  
+    <li class="file"><a href="../../doc/AboutOpenClasses_html.html">AboutOpenClasses.html</a>
+  
+    <li class="file"><a href="../../doc/AboutOpenClasses/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutProxyObjectProject_html.html">AboutProxyObjectProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutRegularExpressions_html.html">AboutRegularExpressions.html</a>
+  
+    <li class="file"><a href="../../doc/AboutSandwichCode_html.html">AboutSandwichCode.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope_html.html">AboutScope.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Jims_html.html">Jims.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Jims/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Joes_html.html">Joes.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/Joes/Dog_html.html">Dog.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScope/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../../doc/AboutScoringProject_html.html">AboutScoringProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutStrings_html.html">AboutStrings.html</a>
+  
+    <li class="file"><a href="../../doc/AboutSymbols_html.html">AboutSymbols.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr_html.html">AboutToStr.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr/CanBeTreatedAsString_html.html">CanBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../../doc/AboutToStr/CanNotBeTreatedAsString_html.html">CanNotBeTreatedAsString.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTriangleProject_html.html">AboutTriangleProject.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTriangleProject2_html.html">AboutTriangleProject2.html</a>
+  
+    <li class="file"><a href="../../doc/AboutTrueAndFalse_html.html">AboutTrueAndFalse.html</a>
+  
+    <li class="file"><a href="../../doc/FillMeInError_html.html">FillMeInError.html</a>
+  
+    <li class="file"><a href="../../doc/GREED_RULES_txt_html.html">GREED_RULES_txt.html</a>
+  
+    <li class="file"><a href="../../doc/Integer_html.html">Integer.html</a>
+  
+    <li class="file"><a href="../../doc/KeyError_html.html">KeyError.html</a>
+  
+    <li class="file"><a href="../../doc/Neo_html.html">Neo.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Color_html.html">Color.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Koan_html.html">Koan.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/Sensei_html.html">Sensei.html</a>
+  
+    <li class="file"><a href="../../doc/Neo/ThePath_html.html">ThePath.html</a>
+  
+    <li class="file"><a href="../../doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="../../doc/Proxy_html.html">Proxy.html</a>
+  
+    <li class="file"><a href="../../doc/README_md_html.html">README_md.html</a>
+  
+    <li class="file"><a href="../../doc/README_rdoc_html.html">README_rdoc.html</a>
+  
+    <li class="file"><a href="../../doc/String_html.html">String.html</a>
+  
+    <li class="file"><a href="../../doc/Television_html.html">Television.html</a>
+  
+    <li class="file"><a href="../../doc/TelevisionTest_html.html">TelevisionTest.html</a>
+  
+    <li class="file"><a href="../../doc/TriangleError_html.html">TriangleError.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/example_file_txt_html.html">example_file_txt.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../doc/koans_watchr_html.html">koans_watchr.html</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+    <li class="file"><a href="../../example_file_txt.html">example_file</a>
+  
+    <li class="file"><a href="../../koans_watchr.html">koans.watchr</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../AboutArrayAssignment.html">AboutArrayAssignment</a>
+  
+    <li><a href="../../AboutArrays.html">AboutArrays</a>
+  
+    <li><a href="../../AboutAsserts.html">AboutAsserts</a>
+  
+    <li><a href="../../AboutBlocks.html">AboutBlocks</a>
+  
+    <li><a href="../../AboutClassMethods.html">AboutClassMethods</a>
+  
+    <li><a href="../../AboutClassMethods/Dog.html">AboutClassMethods::Dog</a>
+  
+    <li><a href="../../AboutClassMethods/Dog2.html">AboutClassMethods::Dog2</a>
+  
+    <li><a href="../../AboutClassMethods/Dog.html">AboutClassMethods::LastExpressionInClassStatement</a>
+  
+    <li><a href="../../AboutClasses.html">AboutClasses</a>
+  
+    <li><a href="../../AboutClasses/Dog.html">AboutClasses::Dog</a>
+  
+    <li><a href="../../AboutClasses/Dog2.html">AboutClasses::Dog2</a>
+  
+    <li><a href="../../AboutClasses/Dog3.html">AboutClasses::Dog3</a>
+  
+    <li><a href="../../AboutClasses/Dog4.html">AboutClasses::Dog4</a>
+  
+    <li><a href="../../AboutClasses/Dog5.html">AboutClasses::Dog5</a>
+  
+    <li><a href="../../AboutClasses/Dog6.html">AboutClasses::Dog6</a>
+  
+    <li><a href="../../AboutClasses/Dog7.html">AboutClasses::Dog7</a>
+  
+    <li><a href="../../AboutConstants.html">AboutConstants</a>
+  
+    <li><a href="../../AboutConstants/Animal.html">AboutConstants::Animal</a>
+  
+    <li><a href="../../AboutConstants/Animal/NestedAnimal.html">AboutConstants::Animal::NestedAnimal</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals.html">AboutConstants::MyAnimals</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals/Bird.html">AboutConstants::MyAnimals::Bird</a>
+  
+    <li><a href="../../AboutConstants/MyAnimals/Oyster.html">AboutConstants::MyAnimals::Oyster</a>
+  
+    <li><a href="../../AboutConstants/Reptile.html">AboutConstants::Reptile</a>
+  
+    <li><a href="../../AboutControlStatements.html">AboutControlStatements</a>
+  
+    <li><a href="../../AboutDiceProject.html">AboutDiceProject</a>
+  
+    <li><a href="../../AboutExceptions.html">AboutExceptions</a>
+  
+    <li><a href="../../AboutExceptions/MySpecialError.html">AboutExceptions::MySpecialError</a>
+  
+    <li><a href="../../AboutHashes.html">AboutHashes</a>
+  
+    <li><a href="../../AboutInheritance.html">AboutInheritance</a>
+  
+    <li><a href="../../AboutInheritance/BullDog.html">AboutInheritance::BullDog</a>
+  
+    <li><a href="../../AboutInheritance/Chihuahua.html">AboutInheritance::Chihuahua</a>
+  
+    <li><a href="../../AboutInheritance/Dog.html">AboutInheritance::Dog</a>
+  
+    <li><a href="../../AboutInheritance/GreatDane.html">AboutInheritance::GreatDane</a>
+  
+    <li><a href="../../AboutIteration.html">AboutIteration</a>
+  
+    <li><a href="../../AboutJavaInterop.html">AboutJavaInterop</a>
+  
+    <li><a href="../../AboutJavaInterop/Java.html">AboutJavaInterop::Java</a>
+  
+    <li><a href="../../AboutJavaInterop/Java/JavaUtil.html">AboutJavaInterop::Java::JavaUtil</a>
+  
+    <li><a href="../../AboutJavaInterop/Java/JavaUtil/ArrayList.html">AboutJavaInterop::Java::JavaUtil::ArrayList</a>
+  
+    <li><a href="../../AboutMessagePassing.html">AboutMessagePassing</a>
+  
+    <li><a href="../../AboutMessagePassing/AllMessageCatcher.html">AboutMessagePassing::AllMessageCatcher</a>
+  
+    <li><a href="../../AboutMessagePassing/MessageCatcher.html">AboutMessagePassing::MessageCatcher</a>
+  
+    <li><a href="../../AboutMessagePassing/TypicalObject.html">AboutMessagePassing::TypicalObject</a>
+  
+    <li><a href="../../AboutMessagePassing/WellBehavedFooCatcher.html">AboutMessagePassing::WellBehavedFooCatcher</a>
+  
+    <li><a href="../../AboutMethods.html">AboutMethods</a>
+  
+    <li><a href="../../AboutMethods/Dog.html">AboutMethods::Dog</a>
+  
+    <li><a href="../../AboutModules.html">AboutModules</a>
+  
+    <li><a href="../../AboutModules/Dog.html">AboutModules::Dog</a>
+  
+    <li><a href="../../AboutModules/Nameable.html">AboutModules::Nameable</a>
+  
+    <li><a href="../../AboutNil.html">AboutNil</a>
+  
+    <li><a href="../../AboutObjects.html">AboutObjects</a>
+  
+    <li><a href="../../AboutOpenClasses.html">AboutOpenClasses</a>
+  
+    <li><a href="../../AboutOpenClasses/Dog.html">AboutOpenClasses::Dog</a>
+  
+    <li><a href="../../AboutProxyObjectProject.html">AboutProxyObjectProject</a>
+  
+    <li><a href="../../AboutRegularExpressions.html">AboutRegularExpressions</a>
+  
+    <li><a href="../../AboutSandwichCode.html">AboutSandwichCode</a>
+  
+    <li><a href="../../AboutScope.html">AboutScope</a>
+  
+    <li><a href="../../AboutScope/Jims.html">AboutScope::Jims</a>
+  
+    <li><a href="../../AboutScope/Jims/Dog.html">AboutScope::Jims::Dog</a>
+  
+    <li><a href="../../AboutScope/Joes.html">AboutScope::Joes</a>
+  
+    <li><a href="../../AboutScope/Joes/Dog.html">AboutScope::Joes::Dog</a>
+  
+    <li><a href="../../AboutScope/String.html">AboutScope::String</a>
+  
+    <li><a href="../../AboutScoringProject.html">AboutScoringProject</a>
+  
+    <li><a href="../../AboutStrings.html">AboutStrings</a>
+  
+    <li><a href="../../AboutSymbols.html">AboutSymbols</a>
+  
+    <li><a href="../../AboutToStr.html">AboutToStr</a>
+  
+    <li><a href="../../AboutToStr/CanBeTreatedAsString.html">AboutToStr::CanBeTreatedAsString</a>
+  
+    <li><a href="../../AboutToStr/CanNotBeTreatedAsString.html">AboutToStr::CanNotBeTreatedAsString</a>
+  
+    <li><a href="../../AboutTriangleProject.html">AboutTriangleProject</a>
+  
+    <li><a href="../../AboutTriangleProject2.html">AboutTriangleProject2</a>
+  
+    <li><a href="../../AboutTrueAndFalse.html">AboutTrueAndFalse</a>
+  
+    <li><a href="../../FillMeInError.html">FillMeInError</a>
+  
+    <li><a href="../../Integer.html">Integer</a>
+  
+    <li><a href="../../KeyError.html">KeyError</a>
+  
+    <li><a href="../../Neo.html">Neo</a>
+  
+    <li><a href="../../Neo/Color.html">Neo::Color</a>
+  
+    <li><a href="../../Neo/Koan.html">Neo::Koan</a>
+  
+    <li><a href="../../Neo/Sensei.html">Neo::Sensei</a>
+  
+    <li><a href="../../Neo/ThePath.html">Neo::ThePath</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../Proxy.html">Proxy</a>
+  
+    <li><a href="../../String.html">String</a>
+  
+    <li><a href="../../Television.html">Television</a>
+  
+    <li><a href="../../TelevisionTest.html">TelevisionTest</a>
+  
+    <li><a href="../../TriangleError.html">TriangleError</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>var search_data = {“index”:{“<a
+href="http://"aboutarrayassignment","aboutarrays","aboutasserts","aboutblocks","aboutclassmethods","dog","dog2","lastexpressioninclassstatement","aboutclasses","dog","dog2","dog3","dog4","dog5","dog6","dog7","aboutconstants","animal","nestedanimal","myanimals","bird","oyster","reptile","aboutcontrolstatements","aboutdiceproject","aboutexceptions","myspecialerror","abouthashes","aboutinheritance","bulldog","chihuahua","dog","greatdane","aboutiteration","aboutjavainterop","java","javautil","arraylist","aboutmessagepassing","allmessagecatcher","messagecatcher","typicalobject","wellbehavedfoocatcher","aboutmethods","dog","aboutmodules","dog","nameable","aboutnil","aboutobjects","aboutopenclasses","dog","aboutproxyobjectproject","aboutregularexpressions","aboutsandwichcode","aboutscope","jims","dog","joes","dog","string","aboutscoringproject","aboutstrings","aboutsymbols","abouttostr","canbetreatedasstring","cannotbetreatedasstring","abouttriangleproject","abouttriangleproject2","abouttrueandfalse","fillmeinerror","integer","keyerror","neo","color","koan","sensei","thepath","object","proxy","string","television","televisiontest","triangleerror","__()","_()","__()","n()","a_class_method()","a_class_method()","a_zenlike_statement()","acts_like_a_string?()","add_a_payload()","add_progress()","artistic_end_screen()","as_name()","assert_failed?()","bark()","bark()","bark()","bark()","bark()","boring_end_screen()","caught?()","color()","colorize()","command_line()","count_lines()","count_lines2()","count_lines3()","each_step()","embolden_first_line_only()","encourage()","end_of_enlightenment()","end_screen()","even?()","failed()","failed?()","file_sandwich()","find_interesting_lines()","find_line()","find_line2()","get_self()","growl()","guide_through_error()","here()","here()","identify()","identify()","in_ruby_version()","indent()","inherited()","inspect()","instruct()","legs_in_animal()","legs_in_bird()","legs_in_nested_animal()","legs_in_oyster()","legs_in_reptile()","many_yields()","meditate()","method_added()","method_missing()","method_missing()","method_with_block()","method_with_block_arguments()","method_with_defaults()","method_with_explicit_block()","method_with_explicit_return()","method_with_keyword_arguments()","method_with_keywork_arguments_with_mandatory_argument()","method_with_var_args()","method_without_explicit_return()","multiply_all()","my_global_method()","my_method_in_the_same_class()","name()","name()","name()","name()","new()","new()","new()","new()","new()","new()","new()","observe()","on?()","passed?()","power()","progress()","respond_to?()","ruby_version?()","score()","set_name()","set_name()","set_name()","set_name()","setup()","show_progress()","side_padding()","simple_output()","subclasses()","teardown()","test_a_better_way_of_asserting_equality()","test_a_character_class_can_be_negated()","test_a_failed_match_returns_nil()","test_a_pattern_is_a_regular_expression()","test_a_regexp_can_search_a_string_for_matching_content()","test_a_vertical_pipe_means_or()","test_accessing_array_elements()","test_accessing_hashes()","test_accessing_hashes_with_fetch()","test_after_reopening_dogs_can_both_wag_and_bark()","test_all_classes_ultimately_inherit_from_object()","test_all_iteration_methods_work_on_any_collection_not_just_arrays()","test_all_messages_are_caught()","test_all_objects_support_to_s_and_inspect()","test_also_java_class_can_be_given_ruby_aliases()","test_any_ruby_expression_may_be_interpolated()","test_args_to_new_must_match_initialize()","test_array_literals()","test_arrays_and_ranges()","test_as_defined_dogs_do_bark()","test_assert_equality()","test_assert_truth()","test_assert_with_message()","test_asserting_an_error_is_raised()","test_asterisk_means_zero_or_more()","test_attr_accessor_will_automatically_define_both_read_and_write_accessors()","test_attr_reader_will_automatically_define_an_accessor()","test_bare_bones_class_names_assume_the_current_scope()","test_block_can_affect_variables_in_the_code_where_they_are_created()","test_blocks_can_be_assigned_to_variables_and_called_explicitly()","test_blocks_can_be_defined_with_do_end_too()","test_blocks_can_take_arguments()","test_break_statement()","test_break_statement_returns_values()","test_break_works_with_each_style_iterations()","test_calling_global_methods()","test_calling_global_methods_with_wrong_number_of_arguments()","test_calling_global_methods_without_parentheses()","test_calling_method_missing_causes_the_no_method_error()","test_calling_methods_in_other_objects_require_explicit_receiver()","test_calling_methods_in_same_class()","test_calling_methods_in_same_class_with_explicit_receiver()","test_calling_private_methods_in_other_objects()","test_calling_private_methods_with_an_explicit_receiver()","test_calling_private_methods_without_receiver()","test_calling_with_default_values()","test_calling_with_variable_arguments()","test_can_create_a_dice_set()","test_can_directly_call_java_methods_on_java_objects()","test_can_set_the_channel()","test_cant_instantiate_modules()","test_caret_anchors_to_the_start_of_lines()","test_catching_messages_makes_respond_to_lie()","test_changing_hashes()","test_character_classes_can_include_ranges()","test_character_classes_give_options_for_a_character()","test_class_methods_are_independent_of_instance_methods()","test_class_names_are_just_constants()","test_class_statements_return_the_value_of_their_last_expression()","test_classes_and_instances_do_not_share_instance_variables()","test_classes_are_classes()","test_classes_are_objects_too()","test_classes_can_be_asked_if_they_know_how_to_respond()","test_classes_can_override_module_methods()","test_classes_have_methods()","test_clone_creates_a_different_object()","test_collect_transforms_elements_of_an_array()","test_combining_hashes()","test_condition_operators()","test_constants_are_defined_with_an_initial_uppercase_letter()","test_constants_become_symbols()","test_constants_can_be_looked_up_explicitly()","test_counting_lines()","test_counting_lines2()","test_creating_arrays()","test_creating_hashes()","test_default_value()","test_default_value_is_the_same_object()","test_default_value_with_block()","test_dice_values_do_not_change_unless_explicitly_rolled()","test_dice_values_should_change_between_rolls()","test_different_objects_have_different_instance_variables()","test_dog_is_not_available_in_the_current_scope()","test_dollar_sign_anchors_to_the_end_of_lines()","test_double_quoted_string_interpret_escape_characters()","test_double_quoted_strings_are_strings()","test_double_quoted_strings_interpolate_variables()","test_each_can_use_curly_brace_blocks_too()","test_each_is_a_method_on_arrays()","test_edge_case_on_off()","test_ensure_clause()","test_equilateral_triangles_have_equal_sides()","test_even_existing_built_in_classes_can_be_reopened()","test_every_object_has_an_id()","test_every_object_has_different_id()","test_everything_else_is_treated_as_true()","test_everything_is_an_object()","test_exceptions_inherit_from_exception()","test_explicitly_implementing_respond_to_lets_objects_tell_the_truth()","test_false_is_treated_as_false()","test_fill_in_values()","test_find_locates_the_first_element_matching_a_criteria()","test_finding_lines()","test_finding_lines2()","test_flexible_quotes_can_handle_multiple_lines()","test_foo_method_are_caught()","test_for_statement()","test_gsub_is_like_find_and_replace_all()","test_hash_is_unordered()","test_hash_keys()","test_hash_literals()","test_hash_values()","test_here_documents_can_also_handle_multiple_lines()","test_however_most_methods_returning_strings_return_ruby_strings()","test_identical_symbols_are_a_single_internal_object()","test_if_statement_modifiers()","test_if_statements_return_values()","test_if_statements_with_no_else_with_false_condition_return_value()","test_if_then_else_statements()","test_if_then_statements()","test_illegal_triangles_throw_exceptions()","test_in_ruby_1_8_single_characters_are_represented_by_integers()","test_in_ruby_1_9_single_characters_are_represented_by_strings()","test_include_class_includes_class_in_module_scope()","test_initialize_provides_initial_values_for_instance_variables()","test_inject_will_blow_your_mind()","test_inside_a_method_self_refers_to_the_containing_object()","test_inspect_provides_a_more_complete_string_version()","test_instance_variables_can_be_set_by_assigning_to_them()","test_instance_variables_cannot_be_accessed_outside_the_class()","test_instances_of_classes_can_be_created_with_new()","test_isosceles_triangles_have_exactly_two_sides_equal()","test_it_also_turns_off()","test_it_turns_on()","test_iterating_with_each()","test_java_class_are_open_from_ruby()","test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax()","test_java_collections_are_enumerable()","test_java_string_are_not_ruby_strings()","test_java_strings_can_be_compared_to_ruby_strings_maybe()","test_jruby_provides_question_mark_versions_of_boolean_methods()","test_jruby_provides_snake_case_versions_of_java_methods()","test_keyword_arguments()","test_keyword_arguments_with_wrong_number_of_arguments()","test_method_names_become_symbols()","test_method_with_explicit_return()","test_method_without_explicit_return()","test_methods_can_be_called_directly()","test_methods_can_be_invoked_by_sending_the_message()","test_methods_can_be_invoked_more_dynamically()","test_methods_can_call_yield_many_times()","test_methods_can_see_if_they_have_been_called_with_a_block()","test_methods_can_take_an_explicit_block_argument()","test_methods_can_take_blocks()","test_module_methods_are_also_available_in_the_object()","test_module_methods_can_affect_instance_variables_in_the_object()","test_nested_classes_inherit_constants_from_enclosing_classes()","test_nested_constants_are_referenced_by_their_complete_path()","test_nested_constants_may_also_be_referenced_with_relative_paths()","test_nested_string_is_not_the_same_as_the_system_string()","test_next_statement()","test_nil_has_a_few_methods_defined_on_it()","test_nil_is_an_object()","test_nil_is_treated_as_false_too()","test_non_foo_messages_are_treated_normally()","test_non_parallel_assignment()","test_normal_methods_are_available_in_the_object()","test_normally_objects_cannot_be_used_where_strings_are_expected()","test_objects_are_objects()","test_objects_can_be_converted_to_strings()","test_objects_can_be_inspected()","test_objects_have_methods()","test_open_handles_the_file_sandwich_when_given_a_block()","test_other_objects_are_not_affected_by_these_singleton_methods()","test_parallel_assignment_with_one_variable()","test_parallel_assignments()","test_parallel_assignments_with_extra_values()","test_parallel_assignments_with_splat_operator()","test_parallel_assignments_with_subarrays()","test_parallel_assignments_with_too_few_variables()","test_parentheses_also_capture_matched_content_by_number()","test_parentheses_group_contents()","test_pattern()","test_period_is_a_shortcut_for_any_non_newline_character()","test_plus_concatenation_will_leave_the_original_strings_unmodified()","test_plus_equals_also_will_leave_the_original_string_unmodified()","test_plus_equals_will_concatenate_to_the_end_of_a_string()","test_plus_means_one_or_more()","test_plus_will_concatenate_two_strings()","test_proxy_can_record_more_than_just_tv_objects()","test_proxy_counts_method_calls()","test_proxy_handles_invalid_messages()","test_proxy_method_returns_wrapped_object()","test_proxy_records_messages_sent_to_tv()","test_proxy_reports_methods_have_been_called()","test_pushing_and_popping_arrays()","test_question_mark_means_optional()","test_raising_a_particular_error()","test_rescue_clause()","test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6()","test_scalene_triangles_have_no_equal_sides()","test_scan_is_like_find_all()","test_score_of_a_single_roll_of_1_is_100()","test_score_of_a_single_roll_of_5_is_50()","test_score_of_a_triple_1_is_1000()","test_score_of_an_empty_list_is_zero()","test_score_of_mixed_is_sum()","test_score_of_multiple_1s_and_5s_is_the_sum_of_individual_scores()","test_score_of_other_triples_is_100x()","test_score_of_single_2s_3s_4s_and_6s_are_zero()","test_select_selects_certain_items_from_an_array()","test_send_with_underscores_will_also_send_messages()","test_sending_a_message_with_arguments()","test_sending_undefined_messages_to_a_typical_object_results_in_errors()","test_shifting_arrays()","test_shortcut_character_classes_are_negated_with_capitals()","test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too()","test_single_quoted_string_do_not_interpret_escape_characters()","test_single_quoted_strings_are_also_strings()","test_single_quoted_strings_do_not_interpolate()","test_single_quotes_sometimes_interpret_escape_characters()","test_slash_a_anchors_to_the_start_of_the_string()","test_slash_b_anchors_to_a_word_boundary()","test_slash_d_is_a_shortcut_for_a_digit_character_class()","test_slash_s_is_a_shortcut_for_a_whitespace_character_class()","test_slash_w_is_a_shortcut_for_a_word_character_class()","test_slash_z_anchors_to_the_end_of_the_string()","test_slicing_arrays()","test_slicing_with_ranges()","test_small_integers_have_fixed_ids()","test_some_ruby_objects_are_not_coerced_to_what_you_might_expect()","test_some_ruby_objects_can_be_coerced_to_java()","test_sometimes_missing_parentheses_are_ambiguous()","test_stand_alone_blocks_can_be_passed_to_methods_expecting_blocks()","test_strings_are_unique_objects()","test_strings_can_be_joined()","test_strings_can_be_split()","test_strings_can_be_split_with_different_patterns()","test_sub_is_like_find_and_replace()","test_subclasses_add_new_behavior()","test_subclasses_can_invoke_parent_behavior_via_super()","test_subclasses_can_modify_existing_behavior()","test_subclasses_have_the_parent_as_an_ancestor()","test_subclasses_inherit_behavior_from_parent_class()","test_subclasses_inherit_constants_from_parent_classes()","test_super_does_not_work_cross_method()","test_swapping_with_parallel_assignment()","test_symbols_are_not_strings()","test_symbols_are_symbols()","test_symbols_can_be_compared()","test_symbols_can_be_dynamically_created()","test_symbols_can_be_made_from_strings()","test_symbols_cannot_be_concatenated()","test_symbols_do_not_have_string_methods()","test_symbols_with_interpolation_can_be_built()","test_symbols_with_spaces_can_be_built()","test_the_left_most_match_wins()","test_the_shovel_operator_modifies_the_original_string()","test_the_shovel_operator_will_also_append_content_to_a_string()","test_times_statement()","test_to_s_is_called_on_interpolated_symbols()","test_to_s_is_used_in_string_interpolation()","test_to_s_provides_a_string_version_of_the_object()","test_to_s_returns_a_string_representation()","test_to_str_allows_objects_to_be_treated_as_strings()","test_to_str_also_returns_a_string_representation()","test_top_level_constants_are_referenced_by_double_colons()","test_true_is_treated_as_true()","test_tv_methods_still_perform_their_function()","test_unless_statement()","test_unless_statement_evaluate_true()","test_unless_statement_modifier()","test_use_backslash_for_those_hard_cases()","test_use_double_quotes_to_create_strings_with_single_quotes()","test_use_flexible_quoting_to_handle_really_hard_cases()","test_use_single_quotes_to_create_string_with_double_quotes()","test_use_the_prefix_scope_operator_to_force_the_global_scope()","test_user_defined_code_can_check_for_to_str()","test_using_a_java_library_class()","test_variables_can_also_be_used_to_access_captures()","test_while_statement()","test_who_wins_with_both_nested_and_inherited_constants()","test_who_wins_with_explicit_scoping_on_class_definition()","test_you_can_create_accessor_methods_to_return_instance_variables()","test_you_can_define_class_methods_inside_the_class()","test_you_can_define_methods_on_individual_objects()","test_you_can_get_a_list_of_constants_for_any_class_or_module()","test_you_can_get_a_single_character_from_a_string()","test_you_can_get_a_substring_from_a_string()","test_you_can_politely_ask_for_instance_variable_values()","test_you_can_reference_nested_classes_using_the_scope_operator()","test_you_can_rip_the_value_out_using_instance_eval()","test_you_can_roll_different_numbers_of_dice()","test_you_dont_get_null_pointer_errors_when_calling_methods_on_nil()","testmethods()","tests_disabled?()","to_s()","to_s()","to_s()","to_str()","total_tests()","triangle()","truth_value()","use_colors?()","using_win32console()","using_windows?()","wag()","wag()","wag()","wag()","walk()","yield_tester()","greed_rules","readme","readme","created.rid","example_file","koans.watchr"">searchIndex”:</a>,“<a
+href=""aboutarrayassignment","aboutarrays","aboutasserts","aboutblocks","aboutclassmethods","aboutclassmethods::dog","aboutclassmethods::dog2","aboutclassmethods::lastexpressioninclassstatement","aboutclasses","aboutclasses::dog","aboutclasses::dog2","aboutclasses::dog3","aboutclasses::dog4","aboutclasses::dog5","aboutclasses::dog6","aboutclasses::dog7","aboutconstants","aboutconstants::animal","aboutconstants::animal::nestedanimal","aboutconstants::myanimals","aboutconstants::myanimals::bird","aboutconstants::myanimals::oyster","aboutconstants::reptile","aboutcontrolstatements","aboutdiceproject","aboutexceptions","aboutexceptions::myspecialerror","abouthashes","aboutinheritance","aboutinheritance::bulldog","aboutinheritance::chihuahua","aboutinheritance::dog","aboutinheritance::greatdane","aboutiteration","aboutjavainterop","aboutjavainterop::java","aboutjavainterop::java::javautil","aboutjavainterop::java::javautil::arraylist","aboutmessagepassing","aboutmessagepassing::allmessagecatcher","aboutmessagepassing::messagecatcher","aboutmessagepassing::typicalobject","aboutmessagepassing::wellbehavedfoocatcher","aboutmethods","aboutmethods::dog","aboutmodules","aboutmodules::dog","aboutmodules::nameable","aboutnil","aboutobjects","aboutopenclasses","aboutopenclasses::dog","aboutproxyobjectproject","aboutregularexpressions","aboutsandwichcode","aboutscope","aboutscope::jims","aboutscope::jims::dog","aboutscope::joes","aboutscope::joes::dog","aboutscope::string","aboutscoringproject","aboutstrings","aboutsymbols","abouttostr","abouttostr::canbetreatedasstring","abouttostr::cannotbetreatedasstring","abouttriangleproject","abouttriangleproject2","abouttrueandfalse","fillmeinerror","integer","keyerror","neo","neo::color","neo::koan","neo::sensei","neo::thepath","object","proxy","string","television","televisiontest","triangleerror","object#__()","object#_()","object#__()","object#n()","aboutclassmethods::dog::a_class_method()","aboutclassmethods::dog::a_class_method()","neo::sensei#a_zenlike_statement()","abouttostr#acts_like_a_string?()","aboutmessagepassing::messagecatcher#add_a_payload()","neo::sensei#add_progress()","neo::sensei#artistic_end_screen()","aboutiteration#as_name()","neo::sensei#assert_failed?()","aboutinheritance::bulldog#bark()","aboutinheritance::chihuahua#bark()","aboutinheritance::dog#bark()","aboutmodules::dog#bark()","aboutopenclasses::dog#bark()","neo::sensei#boring_end_screen()","aboutmessagepassing::messagecatcher#caught?()","neo::color#color()","neo::color#colorize()","neo::koan::command_line()","aboutsandwichcode#count_lines()","aboutsandwichcode#count_lines2()","aboutsandwichcode#count_lines3()","neo::thepath#each_step()","neo::sensei#embolden_first_line_only()","neo::sensei#encourage()","neo::koan::end_of_enlightenment()","neo::sensei#end_screen()","integer#even?()","neo::koan#failed()","neo::sensei#failed?()","aboutsandwichcode#file_sandwich()","neo::sensei#find_interesting_lines()","aboutsandwichcode#find_line()","aboutsandwichcode#find_line2()","aboutclasses::dog7#get_self()","aboutinheritance::greatdane#growl()","neo::sensei#guide_through_error()","aboutmodules::dog#here()","aboutmodules::nameable#here()","aboutscope::jims::dog#identify()","aboutscope::joes::dog#identify()","object#in_ruby_version()","neo::sensei#indent()","neo::koan::inherited()","aboutclasses::dog7#inspect()","neo::sensei#instruct()","aboutconstants::animal#legs_in_animal()","aboutconstants::myanimals::bird#legs_in_bird()","aboutconstants::animal::nestedanimal#legs_in_nested_animal()","aboutconstants::myanimals::oyster#legs_in_oyster()","aboutconstants::reptile#legs_in_reptile()","aboutblocks#many_yields()","neo::koan#meditate()","neo::koan::method_added()","aboutmessagepassing::allmessagecatcher#method_missing()","aboutmessagepassing::wellbehavedfoocatcher#method_missing()","aboutblocks#method_with_block()","aboutblocks#method_with_block_arguments()","aboutmethods#method_with_defaults()","aboutblocks#method_with_explicit_block()","aboutmethods#method_with_explicit_return()","aboutmethods#method_with_keyword_arguments()","aboutmethods#method_with_keywork_arguments_with_mandatory_argument()","aboutmethods#method_with_var_args()","aboutmethods#method_without_explicit_return()","aboutjavainterop::java::javautil::arraylist#multiply_all()","object#my_global_method()","aboutmethods#my_method_in_the_same_class()","aboutclassmethods::dog::name()","aboutclassmethods::dog::name()","aboutclasses::dog3#name()","aboutmethods::dog#name()","aboutclasses::dog6::new()","aboutclasses::dog7::new()","aboutinheritance::dog::new()","aboutmodules::dog::new()","neo::koan::new()","neo::sensei::new()","proxy::new()","neo::sensei#observe()","television#on?()","neo::koan#passed?()","television#power()","neo::sensei#progress()","aboutmessagepassing::wellbehavedfoocatcher#respond_to?()","object#ruby_version?()","object#score()","aboutclasses::dog2#set_name()","aboutclasses::dog3#set_name()","aboutclasses::dog4#set_name()","aboutmodules::nameable#set_name()","neo::koan#setup()","neo::sensei#show_progress()","string#side_padding()","neo::simple_output()","neo::koan::subclasses()","neo::koan#teardown()","aboutasserts#test_a_better_way_of_asserting_equality()","aboutregularexpressions#test_a_character_class_can_be_negated()","aboutregularexpressions#test_a_failed_match_returns_nil()","aboutregularexpressions#test_a_pattern_is_a_regular_expression()","aboutregularexpressions#test_a_regexp_can_search_a_string_for_matching_content()","aboutregularexpressions#test_a_vertical_pipe_means_or()","aboutarrays#test_accessing_array_elements()","abouthashes#test_accessing_hashes()","abouthashes#test_accessing_hashes_with_fetch()","aboutopenclasses#test_after_reopening_dogs_can_both_wag_and_bark()","aboutinheritance#test_all_classes_ultimately_inherit_from_object()","aboutiteration#test_all_iteration_methods_work_on_any_collection_not_just_arrays()","aboutmessagepassing#test_all_messages_are_caught()","aboutclasses#test_all_objects_support_to_s_and_inspect()","aboutjavainterop#test_also_java_class_can_be_given_ruby_aliases()","aboutstrings#test_any_ruby_expression_may_be_interpolated()","aboutclasses#test_args_to_new_must_match_initialize()","aboutarrays#test_array_literals()","aboutarrays#test_arrays_and_ranges()","aboutopenclasses#test_as_defined_dogs_do_bark()","aboutasserts#test_assert_equality()","aboutasserts#test_assert_truth()","aboutasserts#test_assert_with_message()","aboutexceptions#test_asserting_an_error_is_raised()","aboutregularexpressions#test_asterisk_means_zero_or_more()","aboutclasses#test_attr_accessor_will_automatically_define_both_read_and_write_accessors()","aboutclasses#test_attr_reader_will_automatically_define_an_accessor()","aboutscope#test_bare_bones_class_names_assume_the_current_scope()","aboutblocks#test_block_can_affect_variables_in_the_code_where_they_are_created()","aboutblocks#test_blocks_can_be_assigned_to_variables_and_called_explicitly()","aboutblocks#test_blocks_can_be_defined_with_do_end_too()","aboutblocks#test_blocks_can_take_arguments()","aboutcontrolstatements#test_break_statement()","aboutcontrolstatements#test_break_statement_returns_values()","aboutiteration#test_break_works_with_each_style_iterations()","aboutmethods#test_calling_global_methods()","aboutmethods#test_calling_global_methods_with_wrong_number_of_arguments()","aboutmethods#test_calling_global_methods_without_parentheses()","aboutmessagepassing#test_calling_method_missing_causes_the_no_method_error()","aboutmethods#test_calling_methods_in_other_objects_require_explicit_receiver()","aboutmethods#test_calling_methods_in_same_class()","aboutmethods#test_calling_methods_in_same_class_with_explicit_receiver()","aboutmethods#test_calling_private_methods_in_other_objects()","aboutmethods#test_calling_private_methods_with_an_explicit_receiver()","aboutmethods#test_calling_private_methods_without_receiver()","aboutmethods#test_calling_with_default_values()","aboutmethods#test_calling_with_variable_arguments()","aboutdiceproject#test_can_create_a_dice_set()","aboutjavainterop#test_can_directly_call_java_methods_on_java_objects()","televisiontest#test_can_set_the_channel()","aboutmodules#test_cant_instantiate_modules()","aboutregularexpressions#test_caret_anchors_to_the_start_of_lines()","aboutmessagepassing#test_catching_messages_makes_respond_to_lie()","abouthashes#test_changing_hashes()","aboutregularexpressions#test_character_classes_can_include_ranges()","aboutregularexpressions#test_character_classes_give_options_for_a_character()","aboutclassmethods#test_class_methods_are_independent_of_instance_methods()","aboutscope#test_class_names_are_just_constants()","object#test_class_statements_return_the_value_of_their_last_expression()","aboutclassmethods#test_classes_and_instances_do_not_share_instance_variables()","aboutclassmethods#test_classes_are_classes()","aboutclassmethods#test_classes_are_objects_too()","aboutmessagepassing#test_classes_can_be_asked_if_they_know_how_to_respond()","aboutmodules#test_classes_can_override_module_methods()","aboutclassmethods#test_classes_have_methods()","aboutobjects#test_clone_creates_a_different_object()","aboutiteration#test_collect_transforms_elements_of_an_array()","abouthashes#test_combining_hashes()","aboutcontrolstatements#test_condition_operators()","aboutscope#test_constants_are_defined_with_an_initial_uppercase_letter()","aboutsymbols#test_constants_become_symbols()","aboutscope#test_constants_can_be_looked_up_explicitly()","aboutsandwichcode#test_counting_lines()","aboutsandwichcode#test_counting_lines2()","aboutarrays#test_creating_arrays()","abouthashes#test_creating_hashes()","abouthashes#test_default_value()","abouthashes#test_default_value_is_the_same_object()","abouthashes#test_default_value_with_block()","aboutdiceproject#test_dice_values_do_not_change_unless_explicitly_rolled()","aboutdiceproject#test_dice_values_should_change_between_rolls()","aboutclasses#test_different_objects_have_different_instance_variables()","aboutscope#test_dog_is_not_available_in_the_current_scope()","aboutregularexpressions#test_dollar_sign_anchors_to_the_end_of_lines()","aboutstrings#test_double_quoted_string_interpret_escape_characters()","aboutstrings#test_double_quoted_strings_are_strings()","aboutstrings#test_double_quoted_strings_interpolate_variables()","aboutiteration#test_each_can_use_curly_brace_blocks_too()","aboutiteration#test_each_is_a_method_on_arrays()","televisiontest#test_edge_case_on_off()","aboutexceptions#test_ensure_clause()","abouttriangleproject#test_equilateral_triangles_have_equal_sides()","aboutopenclasses#test_even_existing_built_in_classes_can_be_reopened()","aboutobjects#test_every_object_has_an_id()","aboutobjects#test_every_object_has_different_id()","abouttrueandfalse#test_everything_else_is_treated_as_true()","aboutobjects#test_everything_is_an_object()","aboutexceptions#test_exceptions_inherit_from_exception()","aboutmessagepassing#test_explicitly_implementing_respond_to_lets_objects_tell_the_truth()","abouttrueandfalse#test_false_is_treated_as_false()","aboutasserts#test_fill_in_values()","aboutiteration#test_find_locates_the_first_element_matching_a_criteria()","aboutsandwichcode#test_finding_lines()","aboutsandwichcode#test_finding_lines2()","aboutstrings#test_flexible_quotes_can_handle_multiple_lines()","aboutmessagepassing#test_foo_method_are_caught()","aboutcontrolstatements#test_for_statement()","aboutregularexpressions#test_gsub_is_like_find_and_replace_all()","abouthashes#test_hash_is_unordered()","abouthashes#test_hash_keys()","abouthashes#test_hash_literals()","abouthashes#test_hash_values()","aboutstrings#test_here_documents_can_also_handle_multiple_lines()","aboutjavainterop#test_however_most_methods_returning_strings_return_ruby_strings()","aboutsymbols#test_identical_symbols_are_a_single_internal_object()","aboutcontrolstatements#test_if_statement_modifiers()","aboutcontrolstatements#test_if_statements_return_values()","aboutcontrolstatements#test_if_statements_with_no_else_with_false_condition_return_value()","aboutcontrolstatements#test_if_then_else_statements()","aboutcontrolstatements#test_if_then_statements()","abouttriangleproject2#test_illegal_triangles_throw_exceptions()","aboutstrings#test_in_ruby_1_8_single_characters_are_represented_by_integers()","aboutstrings#test_in_ruby_1_9_single_characters_are_represented_by_strings()","aboutjavainterop#test_include_class_includes_class_in_module_scope()","aboutclasses#test_initialize_provides_initial_values_for_instance_variables()","aboutiteration#test_inject_will_blow_your_mind()","aboutclasses#test_inside_a_method_self_refers_to_the_containing_object()","aboutclasses#test_inspect_provides_a_more_complete_string_version()","aboutclasses#test_instance_variables_can_be_set_by_assigning_to_them()","aboutclasses#test_instance_variables_cannot_be_accessed_outside_the_class()","aboutclasses#test_instances_of_classes_can_be_created_with_new()","abouttriangleproject#test_isosceles_triangles_have_exactly_two_sides_equal()","televisiontest#test_it_also_turns_off()","televisiontest#test_it_turns_on()","aboutiteration#test_iterating_with_each()","aboutjavainterop#test_java_class_are_open_from_ruby()","aboutjavainterop#test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax()","aboutjavainterop#test_java_collections_are_enumerable()","aboutjavainterop#test_java_string_are_not_ruby_strings()","aboutjavainterop#test_java_strings_can_be_compared_to_ruby_strings_maybe()","aboutjavainterop#test_jruby_provides_question_mark_versions_of_boolean_methods()","aboutjavainterop#test_jruby_provides_snake_case_versions_of_java_methods()","aboutmethods#test_keyword_arguments()","aboutmethods#test_keyword_arguments_with_wrong_number_of_arguments()","aboutsymbols#test_method_names_become_symbols()","aboutmethods#test_method_with_explicit_return()","aboutmethods#test_method_without_explicit_return()","aboutmessagepassing#test_methods_can_be_called_directly()","aboutmessagepassing#test_methods_can_be_invoked_by_sending_the_message()","aboutmessagepassing#test_methods_can_be_invoked_more_dynamically()","aboutblocks#test_methods_can_call_yield_many_times()","aboutblocks#test_methods_can_see_if_they_have_been_called_with_a_block()","aboutblocks#test_methods_can_take_an_explicit_block_argument()","aboutblocks#test_methods_can_take_blocks()","aboutmodules#test_module_methods_are_also_available_in_the_object()","aboutmodules#test_module_methods_can_affect_instance_variables_in_the_object()","aboutconstants#test_nested_classes_inherit_constants_from_enclosing_classes()","aboutconstants#test_nested_constants_are_referenced_by_their_complete_path()","aboutconstants#test_nested_constants_may_also_be_referenced_with_relative_paths()","aboutscope#test_nested_string_is_not_the_same_as_the_system_string()","aboutcontrolstatements#test_next_statement()","aboutnil#test_nil_has_a_few_methods_defined_on_it()","aboutnil#test_nil_is_an_object()","abouttrueandfalse#test_nil_is_treated_as_false_too()","aboutmessagepassing#test_non_foo_messages_are_treated_normally()","aboutarrayassignment#test_non_parallel_assignment()","aboutmodules#test_normal_methods_are_available_in_the_object()","abouttostr#test_normally_objects_cannot_be_used_where_strings_are_expected()","aboutclassmethods#test_objects_are_objects()","aboutobjects#test_objects_can_be_converted_to_strings()","aboutobjects#test_objects_can_be_inspected()","aboutclassmethods#test_objects_have_methods()","aboutsandwichcode#test_open_handles_the_file_sandwich_when_given_a_block()","aboutclassmethods#test_other_objects_are_not_affected_by_these_singleton_methods()","aboutarrayassignment#test_parallel_assignment_with_one_variable()","aboutarrayassignment#test_parallel_assignments()","aboutarrayassignment#test_parallel_assignments_with_extra_values()","aboutarrayassignment#test_parallel_assignments_with_splat_operator()","aboutarrayassignment#test_parallel_assignments_with_subarrays()","aboutarrayassignment#test_parallel_assignments_with_too_few_variables()","aboutregularexpressions#test_parentheses_also_capture_matched_content_by_number()","aboutregularexpressions#test_parentheses_group_contents()","neo::koan::test_pattern()","aboutregularexpressions#test_period_is_a_shortcut_for_any_non_newline_character()","aboutstrings#test_plus_concatenation_will_leave_the_original_strings_unmodified()","aboutstrings#test_plus_equals_also_will_leave_the_original_string_unmodified()","aboutstrings#test_plus_equals_will_concatenate_to_the_end_of_a_string()","aboutregularexpressions#test_plus_means_one_or_more()","aboutstrings#test_plus_will_concatenate_two_strings()","aboutproxyobjectproject#test_proxy_can_record_more_than_just_tv_objects()","aboutproxyobjectproject#test_proxy_counts_method_calls()","aboutproxyobjectproject#test_proxy_handles_invalid_messages()","aboutproxyobjectproject#test_proxy_method_returns_wrapped_object()","aboutproxyobjectproject#test_proxy_records_messages_sent_to_tv()","aboutproxyobjectproject#test_proxy_reports_methods_have_been_called()","aboutarrays#test_pushing_and_popping_arrays()","aboutregularexpressions#test_question_mark_means_optional()","aboutexceptions#test_raising_a_particular_error()","aboutexceptions#test_rescue_clause()","aboutdiceproject#test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6()","abouttriangleproject#test_scalene_triangles_have_no_equal_sides()","aboutregularexpressions#test_scan_is_like_find_all()","aboutscoringproject#test_score_of_a_single_roll_of_1_is_100()","aboutscoringproject#test_score_of_a_single_roll_of_5_is_50()","aboutscoringproject#test_score_of_a_triple_1_is_1000()","aboutscoringproject#test_score_of_an_empty_list_is_zero()","aboutscoringproject#test_score_of_mixed_is_sum()","aboutscoringproject#test_score_of_multiple_1s_and_5s_is_the_sum_of_individual_scores()","aboutscoringproject#test_score_of_other_triples_is_100x()","aboutscoringproject#test_score_of_single_2s_3s_4s_and_6s_are_zero()","aboutiteration#test_select_selects_certain_items_from_an_array()","aboutmessagepassing#test_send_with_underscores_will_also_send_messages()","aboutmessagepassing#test_sending_a_message_with_arguments()","aboutmessagepassing#test_sending_undefined_messages_to_a_typical_object_results_in_errors()","aboutarrays#test_shifting_arrays()","aboutregularexpressions#test_shortcut_character_classes_are_negated_with_capitals()","aboutclassmethods#test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too()","aboutstrings#test_single_quoted_string_do_not_interpret_escape_characters()","aboutstrings#test_single_quoted_strings_are_also_strings()","aboutstrings#test_single_quoted_strings_do_not_interpolate()","aboutstrings#test_single_quotes_sometimes_interpret_escape_characters()","aboutregularexpressions#test_slash_a_anchors_to_the_start_of_the_string()","aboutregularexpressions#test_slash_b_anchors_to_a_word_boundary()","aboutregularexpressions#test_slash_d_is_a_shortcut_for_a_digit_character_class()","aboutregularexpressions#test_slash_s_is_a_shortcut_for_a_whitespace_character_class()","aboutregularexpressions#test_slash_w_is_a_shortcut_for_a_word_character_class()","aboutregularexpressions#test_slash_z_anchors_to_the_end_of_the_string()","aboutarrays#test_slicing_arrays()","aboutarrays#test_slicing_with_ranges()","aboutobjects#test_small_integers_have_fixed_ids()","aboutjavainterop#test_some_ruby_objects_are_not_coerced_to_what_you_might_expect()","aboutjavainterop#test_some_ruby_objects_can_be_coerced_to_java()","aboutmethods#test_sometimes_missing_parentheses_are_ambiguous()","aboutblocks#test_stand_alone_blocks_can_be_passed_to_methods_expecting_blocks()","aboutstrings#test_strings_are_unique_objects()","aboutstrings#test_strings_can_be_joined()","aboutstrings#test_strings_can_be_split()","aboutstrings#test_strings_can_be_split_with_different_patterns()","aboutregularexpressions#test_sub_is_like_find_and_replace()","aboutinheritance#test_subclasses_add_new_behavior()","aboutinheritance#test_subclasses_can_invoke_parent_behavior_via_super()","aboutinheritance#test_subclasses_can_modify_existing_behavior()","aboutinheritance#test_subclasses_have_the_parent_as_an_ancestor()","aboutinheritance#test_subclasses_inherit_behavior_from_parent_class()","aboutconstants#test_subclasses_inherit_constants_from_parent_classes()","aboutinheritance#test_super_does_not_work_cross_method()","aboutarrayassignment#test_swapping_with_parallel_assignment()","aboutsymbols#test_symbols_are_not_strings()","aboutsymbols#test_symbols_are_symbols()","aboutsymbols#test_symbols_can_be_compared()","aboutsymbols#test_symbols_can_be_dynamically_created()","aboutsymbols#test_symbols_can_be_made_from_strings()","aboutsymbols#test_symbols_cannot_be_concatenated()","aboutsymbols#test_symbols_do_not_have_string_methods()","aboutsymbols#test_symbols_with_interpolation_can_be_built()","aboutsymbols#test_symbols_with_spaces_can_be_built()","aboutregularexpressions#test_the_left_most_match_wins()","aboutstrings#test_the_shovel_operator_modifies_the_original_string()","aboutstrings#test_the_shovel_operator_will_also_append_content_to_a_string()","aboutcontrolstatements#test_times_statement()","aboutsymbols#test_to_s_is_called_on_interpolated_symbols()","aboutclasses#test_to_s_is_used_in_string_interpolation()","aboutclasses#test_to_s_provides_a_string_version_of_the_object()","abouttostr#test_to_s_returns_a_string_representation()","abouttostr#test_to_str_allows_objects_to_be_treated_as_strings()","abouttostr#test_to_str_also_returns_a_string_representation()","aboutconstants#test_top_level_constants_are_referenced_by_double_colons()","abouttrueandfalse#test_true_is_treated_as_true()","aboutproxyobjectproject#test_tv_methods_still_perform_their_function()","aboutcontrolstatements#test_unless_statement()","aboutcontrolstatements#test_unless_statement_evaluate_true()","aboutcontrolstatements#test_unless_statement_modifier()","aboutstrings#test_use_backslash_for_those_hard_cases()","aboutstrings#test_use_double_quotes_to_create_strings_with_single_quotes()","aboutstrings#test_use_flexible_quoting_to_handle_really_hard_cases()","aboutstrings#test_use_single_quotes_to_create_string_with_double_quotes()","aboutscope#test_use_the_prefix_scope_operator_to_force_the_global_scope()","abouttostr#test_user_defined_code_can_check_for_to_str()","aboutjavainterop#test_using_a_java_library_class()","aboutregularexpressions#test_variables_can_also_be_used_to_access_captures()","aboutcontrolstatements#test_while_statement()","aboutconstants#test_who_wins_with_both_nested_and_inherited_constants()","aboutconstants#test_who_wins_with_explicit_scoping_on_class_definition()","aboutclasses#test_you_can_create_accessor_methods_to_return_instance_variables()","aboutclassmethods#test_you_can_define_class_methods_inside_the_class()","aboutclassmethods#test_you_can_define_methods_on_individual_objects()","aboutscope#test_you_can_get_a_list_of_constants_for_any_class_or_module()","aboutstrings#test_you_can_get_a_single_character_from_a_string()","aboutstrings#test_you_can_get_a_substring_from_a_string()","aboutclasses#test_you_can_politely_ask_for_instance_variable_values()","aboutscope#test_you_can_reference_nested_classes_using_the_scope_operator()","aboutclasses#test_you_can_rip_the_value_out_using_instance_eval()","aboutdiceproject#test_you_can_roll_different_numbers_of_dice()","aboutnil#test_you_dont_get_null_pointer_errors_when_calling_methods_on_nil()","neo::koan::testmethods()","neo::koan::tests_disabled?()","aboutclasses::dog7#to_s()","abouttostr::canbetreatedasstring#to_s()","abouttostr::cannotbetreatedasstring#to_s()","abouttostr::canbetreatedasstring#to_str()","neo::koan::total_tests()","object#triangle()","abouttrueandfalse#truth_value()","neo::color#use_colors?()","neo::color#using_win32console()","neo::color#using_windows?()","aboutclassmethods::dog2::wag()","aboutclassmethods::dog2#wag()","aboutinheritance::chihuahua#wag()","aboutopenclasses::dog#wag()","neo::thepath#walk()","aboutblocks#yield_tester()","","","","","",""">longSearchIndex”:</a>,“<a
+href="http://"AboutArrayAssignment","","AboutArrayAssignment.html","",""">info”:[</a>,[“<a
+href="http://"AboutAsserts","","AboutAsserts.html","",""">AboutArrays”,“”,“AboutArrays.html”,“”,“”],</a>,[“<a
+href="http://"AboutClassMethods","","AboutClassMethods.html","",""">AboutBlocks”,“”,“AboutBlocks.html”,“”,“”],</a>,[“<a
+href=""AboutClassMethods::Dog2","","AboutClassMethods/Dog2.html","",""">:Dog”,“”,“AboutClassMethods/Dog.html”,“”,“”],</a>,[“<a
+href="http://"AboutClasses","","AboutClasses.html","",""">AboutClassMethods::LastExpressionInClassStatement”,“”,“AboutClassMethods/Dog.html”,“”,“”],</a>,[“<a
+href=""AboutClasses::Dog2","","AboutClasses/Dog2.html","",""">:Dog”,“”,“AboutClasses/Dog.html”,“”,“”],</a>,[“<a
+href=""AboutClasses::Dog4","","AboutClasses/Dog4.html","",""">:Dog3”,“”,“AboutClasses/Dog3.html”,“”,“”],</a>,[“<a
+href=""AboutClasses::Dog6","","AboutClasses/Dog6.html","",""">:Dog5”,“”,“AboutClasses/Dog5.html”,“”,“”],</a>,[“<a
+href="http://"AboutConstants","","AboutConstants.html","",""">AboutClasses::Dog7”,“”,“AboutClasses/Dog7.html”,“”,“”],</a>,[“<a
+href=""AboutConstants::Animal::NestedAnimal","","AboutConstants/Animal/NestedAnimal.html","",""">:Animal”,“”,“AboutConstants/Animal.html”,“”,“”],</a>,[“<a
+href=""AboutConstants::MyAnimals::Bird","","AboutConstants/MyAnimals/Bird.html","",""">:MyAnimals”,“”,“AboutConstants/MyAnimals.html”,“”,“”],</a>,[“<a
+href=""AboutConstants::Reptile","","AboutConstants/Reptile.html","",""">:MyAnimals::Oyster”,“”,“AboutConstants/MyAnimals/Oyster.html”,“”,“”],</a>,[“AboutControlStatements”,“”,“AboutControlStatements.html”,“”,“”],[“AboutDiceProject”,“”,“AboutDiceProject.html”,“”,“&lt;p&gt;Implement
+a DiceSet Class here:n&lt;p&gt;class DiceSetnn&lt;pre&gt;code …&lt;/<a
+href="http://"AboutExceptions","","AboutExceptions.html","",""">pre>n”],</a>,[“<a
+href="http://"AboutHashes","","AboutHashes.html","",""">AboutExceptions::MySpecialError”,“”,“AboutExceptions/MySpecialError.html”,“”,“”],</a>,[“<a
+href=""AboutInheritance::BullDog","","AboutInheritance/BullDog.html","",""">AboutInheritance”,“”,“AboutInheritance.html”,“”,“”],</a>,[“<a
+href=""AboutInheritance::Dog","","AboutInheritance/Dog.html","",""">:Chihuahua”,“”,“AboutInheritance/Chihuahua.html”,“”,“”],</a>,[“<a
+href="http://"AboutIteration","","AboutIteration.html","",""">AboutInheritance::GreatDane”,“”,“AboutInheritance/GreatDane.html”,“”,“”],</a>,[“AboutJavaInterop”,“”,“AboutJavaInterop.html”,“”,“&lt;p&gt;Conceptsn&lt;p&gt;Pull
+in a java classn&lt;p&gt;calling a method, Camel vs <a
+href=""AboutJavaInterop::Java","","AboutJavaInterop/Java.html","",""">snaken”],</a>,[“AboutJavaInterop::Java::JavaUtil”,“”,“AboutJavaInterop/Java/JavaUtil.html”,“”,“”],[“AboutJavaInterop::Java::JavaUtil::ArrayList”,“”,“AboutJavaInterop/Java/JavaUtil/ArrayList.html”,“”,“&lt;p&gt;Open
+the Java ArrayList class and add a new <a
+href="http://"AboutMessagePassing","","AboutMessagePassing.html","",""">method.n”],</a>,[“<a
+href=""AboutMessagePassing::MessageCatcher","","AboutMessagePassing/MessageCatcher.html","",""">:AllMessageCatcher”,“”,“AboutMessagePassing/AllMessageCatcher.html”,“”,“”],</a>,[“AboutMessagePassing::TypicalObject”,“”,“AboutMessagePassing/TypicalObject.html”,“”,“”],[“AboutMessagePassing::WellBehavedFooCatcher”,“”,“AboutMessagePassing/WellBehavedFooCatcher.html”,“”,“&lt;p&gt;(note:
+just reopening class from <a
+href="http://"AboutMethods","","AboutMethods.html","",""">above)n”],</a>,[“<a
+href="http://"AboutModules","","AboutModules.html","",""">AboutMethods::Dog”,“”,“AboutMethods/Dog.html”,“”,“”],</a>,[“<a
+href=""AboutModules::Nameable","","AboutModules/Nameable.html","",""">:Dog”,“”,“AboutModules/Dog.html”,“”,“”],</a>,[“<a
+href="http://"AboutObjects","","AboutObjects.html","",""">AboutNil”,“”,“AboutNil.html”,“”,“”],</a>,[“AboutOpenClasses”,“”,“AboutOpenClasses.html”,“”,“”],[“AboutOpenClasses::Dog”,“”,“AboutOpenClasses/Dog.html”,“”,“&lt;p&gt;Open
+the existing Dog class and add a new
+method.n”],[“AboutProxyObjectProject”,“”,“AboutProxyObjectProject.html”,“”,“&lt;p&gt;The
+proxy object should pass the following <a
+href="http://"AboutRegularExpressions","","AboutRegularExpressions.html","",""">Koan:n”],</a>,[“<a
+href="http://"AboutScope","","AboutScope.html","",""">AboutSandwichCode”,“”,“AboutSandwichCode.html”,“”,“”],</a>,[“<a
+href=""AboutScope::Jims::Dog","","AboutScope/Jims/Dog.html","",""">:Jims”,“”,“AboutScope/Jims.html”,“”,“”],</a>,[“<a
+href=""AboutScope::Joes::Dog","","AboutScope/Joes/Dog.html","",""">:Joes”,“”,“AboutScope/Joes.html”,“”,“”],</a>,[“<a
+href="http://"AboutScoringProject","","AboutScoringProject.html","",""">AboutScope::String”,“”,“AboutScope/String.html”,“”,“”],</a>,[“<a
+href="http://"AboutSymbols","","AboutSymbols.html","",""">AboutStrings”,“”,“AboutStrings.html”,“”,“”],</a>,[“<a
+href=""AboutToStr::CanBeTreatedAsString","","AboutToStr/CanBeTreatedAsString.html","",""">AboutToStr”,“”,“AboutToStr.html”,“”,“”],</a>,[“<a
+href="http://"AboutTriangleProject","","AboutTriangleProject.html","",""">AboutToStr::CanNotBeTreatedAsString”,“”,“AboutToStr/CanNotBeTreatedAsString.html”,“”,“”],</a>,[“<a
+href="http://"AboutTrueAndFalse","","AboutTrueAndFalse.html","",""">AboutTriangleProject2”,“”,“AboutTriangleProject2.html”,“”,“”],</a>,[“FillMeInError”,“”,“FillMeInError.html”,“”,“&lt;p&gt;Support
+code for the Ruby <a
+href="http://"Integer","","Integer.html","",""">Koans.n”],</a>,[“<a
+href="http://"Neo","","Neo.html","",""">KeyError”,“”,“KeyError.html”,“”,“”],</a>,[“<a
+href=""Neo::Koan","","Neo/Koan.html","",""">:Color”,“”,“Neo/Color.html”,“”,“”],</a>,[“<a
+href=""Neo::ThePath","","Neo/ThePath.html","",""">:Sensei”,“”,“Neo/Sensei.html”,“”,“”],</a>,[“Object”,“”,“Object.html”,“”,“&lt;p&gt;Method
+name replacement.n”],[“Proxy”,“”,“Proxy.html”,“”,“&lt;p&gt;Project: Create
+a <a href="../../Proxy.html">Proxy</a> Classn&lt;p&gt;In this assignment,
+create a proxy class (one is started for you below). …<a
+href=”http://“String”,“”,“String.html”,“”,“”“>n”],</a>,[“Television”,“”,“Television.html”,“”,“&lt;p&gt;Example
+class using in the proxy testing
+above.n”],[“TelevisionTest”,“”,“TelevisionTest.html”,“”,“&lt;p&gt;Tests for
+the <a href="../../Television.html">Television</a> class.  All of theses
+tests should
+pass.n”],[“TriangleError”,“”,“TriangleError.html”,“”,“&lt;p&gt;Error class
+used in part 2.  No need to change this
+code.n”],[“__”,“Object”,“Object.html#method-i-__”,“()”,“&lt;p&gt;Standard,
+generic replacement value. If value19 is given, it is used innplace of
+value for Ruby 1.9.
+…n”],[“<em>_</em>”,“Object”,“Object.html#method-i-<em>_</em>”,“()”,“&lt;p&gt;Error
+object replacement <a
+href="http://"__","Object","Object.html#method-i-__","()",""">value.n”],</a>,[“<em>n</em>”,“Object”,“Object.html#method-i-<em>n</em>”,“()”,“&lt;p&gt;Numeric
+replacement <a
+href=""a_class_method","AboutClassMethods::Dog","AboutClassMethods/Dog.html#method-c-a_class_method","()",""">value.n”],</a>,[“a_class_method”,“AboutClassMethods::Dog”,“AboutClassMethods/Dog.html#method-c-a_class_method”,“()”,“”],[“a_zenlike_statement”,“Neo::Sensei”,“Neo/Sensei.html#method-i-a_zenlike_statement”,“()”,“&lt;p&gt;Hat&amp;#39;s
+tip to Ara T. Howard for the zen statements from his metakoansnRuby Quiz
+(rubyquiz.com/quiz67.html …<a
+href=”http://“acts_like_a_string?”,“AboutToStr”,“AboutToStr.html#method-i-acts_like_a_string-3F”,“(string)”,“”“>n”],</a>,[“<a
+href=""add_progress","Neo::Sensei","Neo/Sensei.html#method-i-add_progress","(prog)",""">add_a_payload”,“AboutMessagePassing::MessageCatcher”,“AboutMessagePassing/MessageCatcher.html#method-i-add_a_payload”,“(*args)”,“”],</a>,[“<a
+href="http://"as_name","AboutIteration","AboutIteration.html#method-i-as_name","(name)",""">artistic_end_screen”,“Neo::Sensei”,“Neo/Sensei.html#method-i-artistic_end_screen”,“()”,“”],</a>,[“<a
+href=""bark","AboutInheritance::BullDog","AboutInheritance/BullDog.html#method-i-bark","()",""">assert_failed?”,“Neo::Sensei”,“Neo/Sensei.html#method-i-assert_failed-3F”,“()”,“”],</a>,[“<a
+href=""bark","AboutInheritance::Dog","AboutInheritance/Dog.html#method-i-bark","()",""">bark”,“AboutInheritance::Chihuahua”,“AboutInheritance/Chihuahua.html#method-i-bark”,“()”,“”],</a>,[“<a
+href=""bark","AboutOpenClasses::Dog","AboutOpenClasses/Dog.html#method-i-bark","()",""">bark”,“AboutModules::Dog”,“AboutModules/Dog.html#method-i-bark”,“()”,“”],</a>,[“<a
+href=""caught?","AboutMessagePassing::MessageCatcher","AboutMessagePassing/MessageCatcher.html#method-i-caught-3F","()",""">boring_end_screen”,“Neo::Sensei”,“Neo/Sensei.html#method-i-boring_end_screen”,“()”,“”],</a>,[“color”,“Neo::Color”,“Neo/Color.html#method-i-color”,“(color_value)”,“”],[“colorize”,“Neo::Color”,“Neo/Color.html#method-i-colorize”,“(string,
+<a
+href=""command_line","Neo::Koan","Neo/Koan.html#method-c-command_line","(args)",""">color_value)”,“”],</a>,[“count_lines”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-count_lines”,“(file_name)”,“”],[“count_lines2”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-count_lines2”,“(file_name)”,“&lt;p&gt;Now
+we <a
+href="http://"count_lines3","AboutSandwichCode","AboutSandwichCode.html#method-i-count_lines3","(file_name)",""">write:n”],</a>,[“<a
+href=""embolden_first_line_only","Neo::Sensei","Neo/Sensei.html#method-i-embolden_first_line_only","(text)",""">each_step”,“Neo::ThePath”,“Neo/ThePath.html#method-i-each_step”,“()”,“”],</a>,[“<a
+href=""end_of_enlightenment","Neo::Koan","Neo/Koan.html#method-c-end_of_enlightenment","()",""">encourage”,“Neo::Sensei”,“Neo/Sensei.html#method-i-encourage”,“()”,“”],</a>,[“<a
+href="http://"even?","Integer","Integer.html#method-i-even-3F","()",""">end_screen”,“Neo::Sensei”,“Neo/Sensei.html#method-i-end_screen”,“()”,“”],</a>,[“<a
+href=""failed?","Neo::Sensei","Neo/Sensei.html#method-i-failed-3F","()",""">failed”,“Neo::Koan”,“Neo/Koan.html#method-i-failed”,“(failure)”,“”],</a>,[“file_sandwich”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-file_sandwich”,“(file_name)”,“&lt;p&gt;THINK
+ABOUT IT:n&lt;p&gt;The count_lines and find_line are similar, and yet
+different. They bothnfollow the pattern …<a
+href=”“find_interesting_lines”,“Neo::Sensei”,“Neo/Sensei.html#method-i-find_interesting_lines”,“(backtrace)”,“”“>n”],</a>,[“<a
+href="http://"find_line2","AboutSandwichCode","AboutSandwichCode.html#method-i-find_line2","(file_name)",""">find_line”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-find_line”,“(file_name)”,“”],</a>,[“<a
+href=""growl","AboutInheritance::GreatDane","AboutInheritance/GreatDane.html#method-i-growl","()",""">get_self”,“AboutClasses::Dog7”,“AboutClasses/Dog7.html#method-i-get_self”,“()”,“”],</a>,[“<a
+href=""here","AboutModules::Dog","AboutModules/Dog.html#method-i-here","()",""">guide_through_error”,“Neo::Sensei”,“Neo/Sensei.html#method-i-guide_through_error”,“()”,“”],</a>,[“<a
+href=""identify","AboutScope::Jims::Dog","AboutScope/Jims/Dog.html#method-i-identify","()",""">here”,“AboutModules::Nameable”,“AboutModules/Nameable.html#method-i-here”,“()”,“”],</a>,[“<a
+href="http://"in_ruby_version","Object","Object.html#method-i-in_ruby_version","(*versions)",""">identify”,“AboutScope::Joes::Dog”,“AboutScope/Joes/Dog.html#method-i-identify”,“()”,“”],</a>,[“<a
+href=""inherited","Neo::Koan","Neo/Koan.html#method-c-inherited","(subclass)",""">indent”,“Neo::Sensei”,“Neo/Sensei.html#method-i-indent”,“(text)”,“”],</a>,[“<a
+href=""instruct","Neo::Sensei","Neo/Sensei.html#method-i-instruct","()",""">inspect”,“AboutClasses::Dog7”,“AboutClasses/Dog7.html#method-i-inspect”,“()”,“”],</a>,[“<a
+href=""legs_in_bird","AboutConstants::MyAnimals::Bird","AboutConstants/MyAnimals/Bird.html#method-i-legs_in_bird","()",""">legs_in_animal”,“AboutConstants::Animal”,“AboutConstants/Animal.html#method-i-legs_in_animal”,“()”,“”],</a>,[“<a
+href=""legs_in_oyster","AboutConstants::MyAnimals::Oyster","AboutConstants/MyAnimals/Oyster.html#method-i-legs_in_oyster","()",""">legs_in_nested_animal”,“AboutConstants::Animal::NestedAnimal”,“AboutConstants/Animal/NestedAnimal.html#method-i-legs_in_nested_animal”,“()”,“”],</a>,[“<a
+href="http://"many_yields","AboutBlocks","AboutBlocks.html#method-i-many_yields","()",""">legs_in_reptile”,“AboutConstants::Reptile”,“AboutConstants/Reptile.html#method-i-legs_in_reptile”,“()”,“”],</a>,[“<a
+href=""method_added","Neo::Koan","Neo/Koan.html#method-c-method_added","(name)",""">meditate”,“Neo::Koan”,“Neo/Koan.html#method-i-meditate”,“()”,“”],</a>,[“method_missing”,“AboutMessagePassing::AllMessageCatcher”,“AboutMessagePassing/AllMessageCatcher.html#method-i-method_missing”,“(method_name,
+*args,
+&amp;block)”,“”],[“method_missing”,“AboutMessagePassing::WellBehavedFooCatcher”,“AboutMessagePassing/WellBehavedFooCatcher.html#method-i-method_missing”,“(method_name,
+*args, &amp;<a
+href="http://"method_with_block","AboutBlocks","AboutBlocks.html#method-i-method_with_block","()",""">block)”,“”],</a>,[“method_with_block_arguments”,“AboutBlocks”,“AboutBlocks.html#method-i-method_with_block_arguments”,“()”,“”],[“method_with_defaults”,“AboutMethods”,“AboutMethods.html#method-i-method_with_defaults”,“(a,
+<a
+href="http://"method_with_explicit_block","AboutBlocks","AboutBlocks.html#method-i-method_with_explicit_block","(&block)",""">b=:default_value)”,“”],</a>,[“method_with_explicit_return”,“AboutMethods”,“AboutMethods.html#method-i-method_with_explicit_return”,“()”,“”],[“method_with_keyword_arguments”,“AboutMethods”,“AboutMethods.html#method-i-method_with_keyword_arguments”,“(one:
+1, two:
+&#39;two&#39;)”,“”],[“method_with_keywork_arguments_with_mandatory_argument”,“AboutMethods”,“AboutMethods.html#method-i-method_with_keywork_arguments_with_mandatory_argument”,“(one,
+two: 2, three: <a
+href="http://"method_with_var_args","AboutMethods","AboutMethods.html#method-i-method_with_var_args","(*args)",""">3)”,“”],</a>,[“<a
+href=""multiply_all","AboutJavaInterop::Java::JavaUtil::ArrayList","AboutJavaInterop/Java/JavaUtil/ArrayList.html#method-i-multiply_all","()",""">method_without_explicit_return”,“AboutMethods”,“AboutMethods.html#method-i-method_without_explicit_return”,“()”,“”],</a>,[“my_global_method”,“Object”,“Object.html#method-i-my_global_method”,“(a,b)”,“”],[“my_method_in_the_same_class”,“AboutMethods”,“AboutMethods.html#method-i-my_method_in_the_same_class”,“(a,
+<a
+href=""name","AboutClassMethods::Dog","AboutClassMethods/Dog.html#method-c-name","()",""">b)”,“”],</a>,[“<a
+href=""name","AboutClasses::Dog3","AboutClasses/Dog3.html#method-i-name","()",""">name”,“AboutClassMethods::Dog”,“AboutClassMethods/Dog.html#method-c-name”,“()”,“”],</a>,[“<a
+href=""new","AboutClasses::Dog6","AboutClasses/Dog6.html#method-c-new","(initial_name)",""">name”,“AboutMethods::Dog”,“AboutMethods/Dog.html#method-i-name”,“()”,“”],</a>,[“<a
+href=""new","AboutInheritance::Dog","AboutInheritance/Dog.html#method-c-new","(name)",""">new”,“AboutClasses::Dog7”,“AboutClasses/Dog7.html#method-c-new”,“(initial_name)”,“”],</a>,[“new”,“AboutModules::Dog”,“AboutModules/Dog.html#method-c-new”,“()”,“”],[“new”,“Neo::Koan”,“Neo/Koan.html#method-c-new”,“(name,
+koan_file=nil, koan_count=0, <a
+href=""new","Neo::Sensei","Neo/Sensei.html#method-c-new","()",""">step_count=0)”,“”],</a>,[“<a
+href=""observe","Neo::Sensei","Neo/Sensei.html#method-i-observe","(step)",""">new”,“Proxy”,“Proxy.html#method-c-new”,“(target_object)”,“”],</a>,[“<a
+href=""passed?","Neo::Koan","Neo/Koan.html#method-i-passed-3F","()",""">on?”,“Television”,“Television.html#method-i-on-3F”,“()”,“”],</a>,[“<a
+href=""progress","Neo::Sensei","Neo/Sensei.html#method-i-progress","()",""">power”,“Television”,“Television.html#method-i-power”,“()”,“”],</a>,[“<a
+href="http://"ruby_version?","Object","Object.html#method-i-ruby_version-3F","(version)",""">respond_to?”,“AboutMessagePassing::WellBehavedFooCatcher”,“AboutMessagePassing/WellBehavedFooCatcher.html#method-i-respond_to-3F”,“(method_name)”,“”],</a>,[“score”,“Object”,“Object.html#method-i-score”,“(dice)”,“&lt;p&gt;Greed
+is a dice game where you roll up to five dice to accumulate points. nThe
+following “score” …<a
+href=”“set_name”,“AboutClasses::Dog2”,“AboutClasses/Dog2.html#method-i-set_name”,“(a_name)”,“”“>n”],</a>,[“<a
+href=""set_name","AboutClasses::Dog4","AboutClasses/Dog4.html#method-i-set_name","(a_name)",""">set_name”,“AboutClasses::Dog3”,“AboutClasses/Dog3.html#method-i-set_name”,“(a_name)”,“”],</a>,[“<a
+href=""setup","Neo::Koan","Neo/Koan.html#method-i-setup","()",""">set_name”,“AboutModules::Nameable”,“AboutModules/Nameable.html#method-i-set_name”,“(new_name)”,“”],</a>,[“<a
+href="http://"side_padding","String","String.html#method-i-side_padding","(width)",""">show_progress”,“Neo::Sensei”,“Neo/Sensei.html#method-i-show_progress”,“()”,“”],</a>,[“simple_output”,“Neo”,“Neo.html#method-c-simple_output”,“()”,“”],[“subclasses”,“Neo::Koan”,“Neo/Koan.html#method-c-subclasses”,“()”,“&lt;p&gt;Lazy
+initialize list of <a
+href=""teardown","Neo::Koan","Neo/Koan.html#method-i-teardown","()",""">subclassesn”],</a>,[“test_a_better_way_of_asserting_equality”,“AboutAsserts”,“AboutAsserts.html#method-i-test_a_better_way_of_asserting_equality”,“()”,“&lt;p&gt;Some
+ways of asserting equality are better than <a
+href="http://"test_a_character_class_can_be_negated","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_a_character_class_can_be_negated","()",""">others.n”],</a>,[“<a
+href="http://"test_a_pattern_is_a_regular_expression","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_a_pattern_is_a_regular_expression","()",""">test_a_failed_match_returns_nil”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_a_failed_match_returns_nil”,“()”,“”],</a>,[“<a
+href="http://"test_a_vertical_pipe_means_or","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_a_vertical_pipe_means_or","()",""">test_a_regexp_can_search_a_string_for_matching_content”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_a_regexp_can_search_a_string_for_matching_content”,“()”,“”],</a>,[“<a
+href="http://"test_accessing_hashes","AboutHashes","AboutHashes.html#method-i-test_accessing_hashes","()",""">test_accessing_array_elements”,“AboutArrays”,“AboutArrays.html#method-i-test_accessing_array_elements”,“()”,“”],</a>,[“<a
+href="http://"test_after_reopening_dogs_can_both_wag_and_bark","AboutOpenClasses","AboutOpenClasses.html#method-i-test_after_reopening_dogs_can_both_wag_and_bark","()",""">test_accessing_hashes_with_fetch”,“AboutHashes”,“AboutHashes.html#method-i-test_accessing_hashes_with_fetch”,“()”,“”],</a>,[“<a
+href="http://"test_all_iteration_methods_work_on_any_collection_not_just_arrays","AboutIteration","AboutIteration.html#method-i-test_all_iteration_methods_work_on_any_collection_not_just_arrays","()",""">test_all_classes_ultimately_inherit_from_object”,“AboutInheritance”,“AboutInheritance.html#method-i-test_all_classes_ultimately_inherit_from_object”,“()”,“”],</a>,[“<a
+href="http://"test_all_objects_support_to_s_and_inspect","AboutClasses","AboutClasses.html#method-i-test_all_objects_support_to_s_and_inspect","()",""">test_all_messages_are_caught”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_all_messages_are_caught”,“()”,“”],</a>,[“<a
+href="http://"test_any_ruby_expression_may_be_interpolated","AboutStrings","AboutStrings.html#method-i-test_any_ruby_expression_may_be_interpolated","()",""">test_also_java_class_can_be_given_ruby_aliases”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_also_java_class_can_be_given_ruby_aliases”,“()”,“”],</a>,[“<a
+href="http://"test_array_literals","AboutArrays","AboutArrays.html#method-i-test_array_literals","()",""">test_args_to_new_must_match_initialize”,“AboutClasses”,“AboutClasses.html#method-i-test_args_to_new_must_match_initialize”,“()”,“”],</a>,[“<a
+href="http://"test_as_defined_dogs_do_bark","AboutOpenClasses","AboutOpenClasses.html#method-i-test_as_defined_dogs_do_bark","()",""">test_arrays_and_ranges”,“AboutArrays”,“AboutArrays.html#method-i-test_arrays_and_ranges”,“()”,“”],</a>,[“test_assert_equality”,“AboutAsserts”,“AboutAsserts.html#method-i-test_assert_equality”,“()”,“&lt;p&gt;To
+understand reality, we must compare our expectations against
+reality.n”],[“test_assert_truth”,“AboutAsserts”,“AboutAsserts.html#method-i-test_assert_truth”,“()”,“&lt;p&gt;We
+shall contemplate truth by testing reality, via
+asserts.n”],[“test_assert_with_message”,“AboutAsserts”,“AboutAsserts.html#method-i-test_assert_with_message”,“()”,“&lt;p&gt;Enlightenment
+may be more easily achieved with appropriate
+messages.n”],[“test_asserting_an_error_is_raised”,“AboutExceptions”,“AboutExceptions.html#method-i-test_asserting_an_error_is_raised”,“()”,“&lt;p&gt;Sometimes,
+we must know about the <a
+href="http://"test_asterisk_means_zero_or_more","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_asterisk_means_zero_or_more","()",""">unknownn”],</a>,[“<a
+href="http://"test_attr_reader_will_automatically_define_an_accessor","AboutClasses","AboutClasses.html#method-i-test_attr_reader_will_automatically_define_an_accessor","()",""">test_attr_accessor_will_automatically_define_both_read_and_write_accessors”,“AboutClasses”,“AboutClasses.html#method-i-test_attr_accessor_will_automatically_define_both_read_and_write_accessors”,“()”,“”],</a>,[“<a
+href="http://"test_block_can_affect_variables_in_the_code_where_they_are_created","AboutBlocks","AboutBlocks.html#method-i-test_block_can_affect_variables_in_the_code_where_they_are_created","()",""">test_bare_bones_class_names_assume_the_current_scope”,“AboutScope”,“AboutScope.html#method-i-test_bare_bones_class_names_assume_the_current_scope”,“()”,“”],</a>,[“<a
+href="http://"test_blocks_can_be_defined_with_do_end_too","AboutBlocks","AboutBlocks.html#method-i-test_blocks_can_be_defined_with_do_end_too","()",""">test_blocks_can_be_assigned_to_variables_and_called_explicitly”,“AboutBlocks”,“AboutBlocks.html#method-i-test_blocks_can_be_assigned_to_variables_and_called_explicitly”,“()”,“”],</a>,[“<a
+href="http://"test_break_statement","AboutControlStatements","AboutControlStatements.html#method-i-test_break_statement","()",""">test_blocks_can_take_arguments”,“AboutBlocks”,“AboutBlocks.html#method-i-test_blocks_can_take_arguments”,“()”,“”],</a>,[“<a
+href="http://"test_break_works_with_each_style_iterations","AboutIteration","AboutIteration.html#method-i-test_break_works_with_each_style_iterations","()",""">test_break_statement_returns_values”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_break_statement_returns_values”,“()”,“”],</a>,[“test_calling_global_methods”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_global_methods”,“()”,“”],[“test_calling_global_methods_with_wrong_number_of_arguments”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_global_methods_with_wrong_number_of_arguments”,“()”,“&lt;p&gt;NOTE:
+wrong number of argument is not a SYNTAX error, but a runtime <a
+href="http://"test_calling_global_methods_without_parentheses","AboutMethods","AboutMethods.html#method-i-test_calling_global_methods_without_parentheses","()",""">error.n”],</a>,[“<a
+href="http://"test_calling_methods_in_other_objects_require_explicit_receiver","AboutMethods","AboutMethods.html#method-i-test_calling_methods_in_other_objects_require_explicit_receiver","()",""">test_calling_method_missing_causes_the_no_method_error”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_calling_method_missing_causes_the_no_method_error”,“()”,“”],</a>,[“<a
+href="http://"test_calling_methods_in_same_class_with_explicit_receiver","AboutMethods","AboutMethods.html#method-i-test_calling_methods_in_same_class_with_explicit_receiver","()",""">test_calling_methods_in_same_class”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_methods_in_same_class”,“()”,“”],</a>,[“<a
+href="http://"test_calling_private_methods_with_an_explicit_receiver","AboutMethods","AboutMethods.html#method-i-test_calling_private_methods_with_an_explicit_receiver","()",""">test_calling_private_methods_in_other_objects”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_private_methods_in_other_objects”,“()”,“”],</a>,[“<a
+href="http://"test_calling_with_default_values","AboutMethods","AboutMethods.html#method-i-test_calling_with_default_values","()",""">test_calling_private_methods_without_receiver”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_private_methods_without_receiver”,“()”,“”],</a>,[“<a
+href="http://"test_can_create_a_dice_set","AboutDiceProject","AboutDiceProject.html#method-i-test_can_create_a_dice_set","()",""">test_calling_with_variable_arguments”,“AboutMethods”,“AboutMethods.html#method-i-test_calling_with_variable_arguments”,“()”,“”],</a>,[“<a
+href="http://"test_can_set_the_channel","TelevisionTest","TelevisionTest.html#method-i-test_can_set_the_channel","()",""">test_can_directly_call_java_methods_on_java_objects”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_can_directly_call_java_methods_on_java_objects”,“()”,“”],</a>,[“<a
+href="http://"test_caret_anchors_to_the_start_of_lines","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_caret_anchors_to_the_start_of_lines","()",""">test_cant_instantiate_modules”,“AboutModules”,“AboutModules.html#method-i-test_cant_instantiate_modules”,“()”,“”],</a>,[“<a
+href="http://"test_changing_hashes","AboutHashes","AboutHashes.html#method-i-test_changing_hashes","()",""">test_catching_messages_makes_respond_to_lie”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_catching_messages_makes_respond_to_lie”,“()”,“”],</a>,[“<a
+href="http://"test_character_classes_give_options_for_a_character","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_character_classes_give_options_for_a_character","()",""">test_character_classes_can_include_ranges”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_character_classes_can_include_ranges”,“()”,“”],</a>,[“<a
+href="http://"test_class_names_are_just_constants","AboutScope","AboutScope.html#method-i-test_class_names_are_just_constants","()",""">test_class_methods_are_independent_of_instance_methods”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_class_methods_are_independent_of_instance_methods”,“()”,“”],</a>,[“<a
+href="http://"test_classes_and_instances_do_not_share_instance_variables","AboutClassMethods","AboutClassMethods.html#method-i-test_classes_and_instances_do_not_share_instance_variables","()",""">test_class_statements_return_the_value_of_their_last_expression”,“Object”,“Object.html#method-i-test_class_statements_return_the_value_of_their_last_expression”,“()”,“”],</a>,[“<a
+href="http://"test_classes_are_objects_too","AboutClassMethods","AboutClassMethods.html#method-i-test_classes_are_objects_too","()",""">test_classes_are_classes”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_classes_are_classes”,“()”,“”],</a>,[“<a
+href="http://"test_classes_can_override_module_methods","AboutModules","AboutModules.html#method-i-test_classes_can_override_module_methods","()",""">test_classes_can_be_asked_if_they_know_how_to_respond”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_classes_can_be_asked_if_they_know_how_to_respond”,“()”,“”],</a>,[“<a
+href="http://"test_clone_creates_a_different_object","AboutObjects","AboutObjects.html#method-i-test_clone_creates_a_different_object","()",""">test_classes_have_methods”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_classes_have_methods”,“()”,“”],</a>,[“<a
+href="http://"test_combining_hashes","AboutHashes","AboutHashes.html#method-i-test_combining_hashes","()",""">test_collect_transforms_elements_of_an_array”,“AboutIteration”,“AboutIteration.html#method-i-test_collect_transforms_elements_of_an_array”,“()”,“”],</a>,[“<a
+href="http://"test_constants_are_defined_with_an_initial_uppercase_letter","AboutScope","AboutScope.html#method-i-test_constants_are_defined_with_an_initial_uppercase_letter","()",""">test_condition_operators”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_condition_operators”,“()”,“”],</a>,[“<a
+href="http://"test_constants_can_be_looked_up_explicitly","AboutScope","AboutScope.html#method-i-test_constants_can_be_looked_up_explicitly","()",""">test_constants_become_symbols”,“AboutSymbols”,“AboutSymbols.html#method-i-test_constants_become_symbols”,“()”,“”],</a>,[“<a
+href="http://"test_counting_lines2","AboutSandwichCode","AboutSandwichCode.html#method-i-test_counting_lines2","()",""">test_counting_lines”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-test_counting_lines”,“()”,“”],</a>,[“<a
+href="http://"test_creating_hashes","AboutHashes","AboutHashes.html#method-i-test_creating_hashes","()",""">test_creating_arrays”,“AboutArrays”,“AboutArrays.html#method-i-test_creating_arrays”,“()”,“”],</a>,[“<a
+href="http://"test_default_value_is_the_same_object","AboutHashes","AboutHashes.html#method-i-test_default_value_is_the_same_object","()",""">test_default_value”,“AboutHashes”,“AboutHashes.html#method-i-test_default_value”,“()”,“”],</a>,[“<a
+href="http://"test_dice_values_do_not_change_unless_explicitly_rolled","AboutDiceProject","AboutDiceProject.html#method-i-test_dice_values_do_not_change_unless_explicitly_rolled","()",""">test_default_value_with_block”,“AboutHashes”,“AboutHashes.html#method-i-test_default_value_with_block”,“()”,“”],</a>,[“<a
+href="http://"test_different_objects_have_different_instance_variables","AboutClasses","AboutClasses.html#method-i-test_different_objects_have_different_instance_variables","()",""">test_dice_values_should_change_between_rolls”,“AboutDiceProject”,“AboutDiceProject.html#method-i-test_dice_values_should_change_between_rolls”,“()”,“”],</a>,[“<a
+href="http://"test_dollar_sign_anchors_to_the_end_of_lines","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_dollar_sign_anchors_to_the_end_of_lines","()",""">test_dog_is_not_available_in_the_current_scope”,“AboutScope”,“AboutScope.html#method-i-test_dog_is_not_available_in_the_current_scope”,“()”,“”],</a>,[“<a
+href="http://"test_double_quoted_strings_are_strings","AboutStrings","AboutStrings.html#method-i-test_double_quoted_strings_are_strings","()",""">test_double_quoted_string_interpret_escape_characters”,“AboutStrings”,“AboutStrings.html#method-i-test_double_quoted_string_interpret_escape_characters”,“()”,“”],</a>,[“<a
+href="http://"test_each_can_use_curly_brace_blocks_too","AboutIteration","AboutIteration.html#method-i-test_each_can_use_curly_brace_blocks_too","()",""">test_double_quoted_strings_interpolate_variables”,“AboutStrings”,“AboutStrings.html#method-i-test_double_quoted_strings_interpolate_variables”,“()”,“”],</a>,[“test_each_is_a_method_on_arrays”,“AboutIteration”,“AboutIteration.html#method-i-test_each_is_a_method_on_arrays”,“()”,“&lt;p&gt;Ok,
+now back to the <a
+href="http://"test_edge_case_on_off","TelevisionTest","TelevisionTest.html#method-i-test_edge_case_on_off","()",""">Koans.n”],</a>,[“<a
+href="http://"test_equilateral_triangles_have_equal_sides","AboutTriangleProject","AboutTriangleProject.html#method-i-test_equilateral_triangles_have_equal_sides","()",""">test_ensure_clause”,“AboutExceptions”,“AboutExceptions.html#method-i-test_ensure_clause”,“()”,“”],</a>,[“<a
+href="http://"test_every_object_has_an_id","AboutObjects","AboutObjects.html#method-i-test_every_object_has_an_id","()",""">test_even_existing_built_in_classes_can_be_reopened”,“AboutOpenClasses”,“AboutOpenClasses.html#method-i-test_even_existing_built_in_classes_can_be_reopened”,“()”,“”],</a>,[“<a
+href="http://"test_everything_else_is_treated_as_true","AboutTrueAndFalse","AboutTrueAndFalse.html#method-i-test_everything_else_is_treated_as_true","()",""">test_every_object_has_different_id”,“AboutObjects”,“AboutObjects.html#method-i-test_every_object_has_different_id”,“()”,“”],</a>,[“<a
+href="http://"test_exceptions_inherit_from_Exception","AboutExceptions","AboutExceptions.html#method-i-test_exceptions_inherit_from_Exception","()",""">test_everything_is_an_object”,“AboutObjects”,“AboutObjects.html#method-i-test_everything_is_an_object”,“()”,“”],</a>,[“<a
+href="http://"test_false_is_treated_as_false","AboutTrueAndFalse","AboutTrueAndFalse.html#method-i-test_false_is_treated_as_false","()",""">test_explicitly_implementing_respond_to_lets_objects_tell_the_truth”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_explicitly_implementing_respond_to_lets_objects_tell_the_truth”,“()”,“”],</a>,[“test_fill_in_values”,“AboutAsserts”,“AboutAsserts.html#method-i-test_fill_in_values”,“()”,“&lt;p&gt;Sometimes
+we will ask you to fill in the <a
+href="http://"test_find_locates_the_first_element_matching_a_criteria","AboutIteration","AboutIteration.html#method-i-test_find_locates_the_first_element_matching_a_criteria","()",""">valuesn”],</a>,[“<a
+href="http://"test_finding_lines2","AboutSandwichCode","AboutSandwichCode.html#method-i-test_finding_lines2","()",""">test_finding_lines”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-test_finding_lines”,“()”,“”],</a>,[“<a
+href="http://"test_foo_method_are_caught","AboutMessagePassing","AboutMessagePassing.html#method-i-test_foo_method_are_caught","()",""">test_flexible_quotes_can_handle_multiple_lines”,“AboutStrings”,“AboutStrings.html#method-i-test_flexible_quotes_can_handle_multiple_lines”,“()”,“”],</a>,[“<a
+href="http://"test_gsub_is_like_find_and_replace_all","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_gsub_is_like_find_and_replace_all","()",""">test_for_statement”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_for_statement”,“()”,“”],</a>,[“<a
+href="http://"test_hash_keys","AboutHashes","AboutHashes.html#method-i-test_hash_keys","()",""">test_hash_is_unordered”,“AboutHashes”,“AboutHashes.html#method-i-test_hash_is_unordered”,“()”,“”],</a>,[“<a
+href="http://"test_hash_values","AboutHashes","AboutHashes.html#method-i-test_hash_values","()",""">test_hash_literals”,“AboutHashes”,“AboutHashes.html#method-i-test_hash_literals”,“()”,“”],</a>,[“<a
+href="http://"test_however_most_methods_returning_strings_return_ruby_strings","AboutJavaInterop","AboutJavaInterop.html#method-i-test_however_most_methods_returning_strings_return_ruby_strings","()",""">test_here_documents_can_also_handle_multiple_lines”,“AboutStrings”,“AboutStrings.html#method-i-test_here_documents_can_also_handle_multiple_lines”,“()”,“”],</a>,[“<a
+href="http://"test_if_statement_modifiers","AboutControlStatements","AboutControlStatements.html#method-i-test_if_statement_modifiers","()",""">test_identical_symbols_are_a_single_internal_object”,“AboutSymbols”,“AboutSymbols.html#method-i-test_identical_symbols_are_a_single_internal_object”,“()”,“”],</a>,[“<a
+href="http://"test_if_statements_with_no_else_with_false_condition_return_value","AboutControlStatements","AboutControlStatements.html#method-i-test_if_statements_with_no_else_with_false_condition_return_value","()",""">test_if_statements_return_values”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_if_statements_return_values”,“()”,“”],</a>,[“<a
+href="http://"test_if_then_statements","AboutControlStatements","AboutControlStatements.html#method-i-test_if_then_statements","()",""">test_if_then_else_statements”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_if_then_else_statements”,“()”,“”],</a>,[“test_illegal_triangles_throw_exceptions”,“AboutTriangleProject2”,“AboutTriangleProject2.html#method-i-test_illegal_triangles_throw_exceptions”,“()”,“&lt;p&gt;The
+first assignment did not talk about how to handle errors.
+Let&amp;#39;snhandle that part <a
+href="http://"test_in_ruby_1_8_single_characters_are_represented_by_integers","AboutStrings","AboutStrings.html#method-i-test_in_ruby_1_8_single_characters_are_represented_by_integers","()",""">now.n”],</a>,[“<a
+href="http://"test_include_class_includes_class_in_module_scope","AboutJavaInterop","AboutJavaInterop.html#method-i-test_include_class_includes_class_in_module_scope","()",""">test_in_ruby_1_9_single_characters_are_represented_by_strings”,“AboutStrings”,“AboutStrings.html#method-i-test_in_ruby_1_9_single_characters_are_represented_by_strings”,“()”,“”],</a>,[“<a
+href="http://"test_inject_will_blow_your_mind","AboutIteration","AboutIteration.html#method-i-test_inject_will_blow_your_mind","()",""">test_initialize_provides_initial_values_for_instance_variables”,“AboutClasses”,“AboutClasses.html#method-i-test_initialize_provides_initial_values_for_instance_variables”,“()”,“”],</a>,[“<a
+href="http://"test_inspect_provides_a_more_complete_string_version","AboutClasses","AboutClasses.html#method-i-test_inspect_provides_a_more_complete_string_version","()",""">test_inside_a_method_self_refers_to_the_containing_object”,“AboutClasses”,“AboutClasses.html#method-i-test_inside_a_method_self_refers_to_the_containing_object”,“()”,“”],</a>,[“<a
+href="http://"test_instance_variables_cannot_be_accessed_outside_the_class","AboutClasses","AboutClasses.html#method-i-test_instance_variables_cannot_be_accessed_outside_the_class","()",""">test_instance_variables_can_be_set_by_assigning_to_them”,“AboutClasses”,“AboutClasses.html#method-i-test_instance_variables_can_be_set_by_assigning_to_them”,“()”,“”],</a>,[“<a
+href="http://"test_isosceles_triangles_have_exactly_two_sides_equal","AboutTriangleProject","AboutTriangleProject.html#method-i-test_isosceles_triangles_have_exactly_two_sides_equal","()",""">test_instances_of_classes_can_be_created_with_new”,“AboutClasses”,“AboutClasses.html#method-i-test_instances_of_classes_can_be_created_with_new”,“()”,“”],</a>,[“<a
+href="http://"test_it_turns_on","TelevisionTest","TelevisionTest.html#method-i-test_it_turns_on","()",""">test_it_also_turns_off”,“TelevisionTest”,“TelevisionTest.html#method-i-test_it_also_turns_off”,“()”,“”],</a>,[“<a
+href="http://"test_java_class_are_open_from_ruby","AboutJavaInterop","AboutJavaInterop.html#method-i-test_java_class_are_open_from_ruby","()",""">test_iterating_with_each”,“AboutIteration”,“AboutIteration.html#method-i-test_iterating_with_each”,“()”,“”],</a>,[“<a
+href="http://"test_java_collections_are_enumerable","AboutJavaInterop","AboutJavaInterop.html#method-i-test_java_collections_are_enumerable","()",""">test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_java_class_can_be_referenced_using_both_ruby_and_java_like_syntax”,“()”,“”],</a>,[“<a
+href="http://"test_java_strings_can_be_compared_to_ruby_strings_maybe","AboutJavaInterop","AboutJavaInterop.html#method-i-test_java_strings_can_be_compared_to_ruby_strings_maybe","()",""">test_java_string_are_not_ruby_strings”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_java_string_are_not_ruby_strings”,“()”,“”],</a>,[“<a
+href="http://"test_jruby_provides_snake_case_versions_of_java_methods","AboutJavaInterop","AboutJavaInterop.html#method-i-test_jruby_provides_snake_case_versions_of_java_methods","()",""">test_jruby_provides_question_mark_versions_of_boolean_methods”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_jruby_provides_question_mark_versions_of_boolean_methods”,“()”,“”],</a>,[“<a
+href="http://"test_keyword_arguments_with_wrong_number_of_arguments","AboutMethods","AboutMethods.html#method-i-test_keyword_arguments_with_wrong_number_of_arguments","()",""">test_keyword_arguments”,“AboutMethods”,“AboutMethods.html#method-i-test_keyword_arguments”,“()”,“”],</a>,[“<a
+href="http://"test_method_with_explicit_return","AboutMethods","AboutMethods.html#method-i-test_method_with_explicit_return","()",""">test_method_names_become_symbols”,“AboutSymbols”,“AboutSymbols.html#method-i-test_method_names_become_symbols”,“()”,“”],</a>,[“<a
+href="http://"test_methods_can_be_called_directly","AboutMessagePassing","AboutMessagePassing.html#method-i-test_methods_can_be_called_directly","()",""">test_method_without_explicit_return”,“AboutMethods”,“AboutMethods.html#method-i-test_method_without_explicit_return”,“()”,“”],</a>,[“<a
+href="http://"test_methods_can_be_invoked_more_dynamically","AboutMessagePassing","AboutMessagePassing.html#method-i-test_methods_can_be_invoked_more_dynamically","()",""">test_methods_can_be_invoked_by_sending_the_message”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_methods_can_be_invoked_by_sending_the_message”,“()”,“”],</a>,[“<a
+href="http://"test_methods_can_see_if_they_have_been_called_with_a_block","AboutBlocks","AboutBlocks.html#method-i-test_methods_can_see_if_they_have_been_called_with_a_block","()",""">test_methods_can_call_yield_many_times”,“AboutBlocks”,“AboutBlocks.html#method-i-test_methods_can_call_yield_many_times”,“()”,“”],</a>,[“<a
+href="http://"test_methods_can_take_blocks","AboutBlocks","AboutBlocks.html#method-i-test_methods_can_take_blocks","()",""">test_methods_can_take_an_explicit_block_argument”,“AboutBlocks”,“AboutBlocks.html#method-i-test_methods_can_take_an_explicit_block_argument”,“()”,“”],</a>,[“<a
+href="http://"test_module_methods_can_affect_instance_variables_in_the_object","AboutModules","AboutModules.html#method-i-test_module_methods_can_affect_instance_variables_in_the_object","()",""">test_module_methods_are_also_available_in_the_object”,“AboutModules”,“AboutModules.html#method-i-test_module_methods_are_also_available_in_the_object”,“()”,“”],</a>,[“<a
+href="http://"test_nested_constants_are_referenced_by_their_complete_path","AboutConstants","AboutConstants.html#method-i-test_nested_constants_are_referenced_by_their_complete_path","()",""">test_nested_classes_inherit_constants_from_enclosing_classes”,“AboutConstants”,“AboutConstants.html#method-i-test_nested_classes_inherit_constants_from_enclosing_classes”,“()”,“”],</a>,[“<a
+href="http://"test_nested_string_is_not_the_same_as_the_system_string","AboutScope","AboutScope.html#method-i-test_nested_string_is_not_the_same_as_the_system_string","()",""">test_nested_constants_may_also_be_referenced_with_relative_paths”,“AboutConstants”,“AboutConstants.html#method-i-test_nested_constants_may_also_be_referenced_with_relative_paths”,“()”,“”],</a>,[“<a
+href="http://"test_nil_has_a_few_methods_defined_on_it","AboutNil","AboutNil.html#method-i-test_nil_has_a_few_methods_defined_on_it","()",""">test_next_statement”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_next_statement”,“()”,“”],</a>,[“<a
+href="http://"test_nil_is_treated_as_false_too","AboutTrueAndFalse","AboutTrueAndFalse.html#method-i-test_nil_is_treated_as_false_too","()",""">test_nil_is_an_object”,“AboutNil”,“AboutNil.html#method-i-test_nil_is_an_object”,“()”,“”],</a>,[“<a
+href="http://"test_non_parallel_assignment","AboutArrayAssignment","AboutArrayAssignment.html#method-i-test_non_parallel_assignment","()",""">test_non_foo_messages_are_treated_normally”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_non_foo_messages_are_treated_normally”,“()”,“”],</a>,[“<a
+href="http://"test_normally_objects_cannot_be_used_where_strings_are_expected","AboutToStr","AboutToStr.html#method-i-test_normally_objects_cannot_be_used_where_strings_are_expected","()",""">test_normal_methods_are_available_in_the_object”,“AboutModules”,“AboutModules.html#method-i-test_normal_methods_are_available_in_the_object”,“()”,“”],</a>,[“<a
+href="http://"test_objects_can_be_converted_to_strings","AboutObjects","AboutObjects.html#method-i-test_objects_can_be_converted_to_strings","()",""">test_objects_are_objects”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_objects_are_objects”,“()”,“”],</a>,[“<a
+href="http://"test_objects_have_methods","AboutClassMethods","AboutClassMethods.html#method-i-test_objects_have_methods","()",""">test_objects_can_be_inspected”,“AboutObjects”,“AboutObjects.html#method-i-test_objects_can_be_inspected”,“()”,“”],</a>,[“<a
+href="http://"test_other_objects_are_not_affected_by_these_singleton_methods","AboutClassMethods","AboutClassMethods.html#method-i-test_other_objects_are_not_affected_by_these_singleton_methods","()",""">test_open_handles_the_file_sandwich_when_given_a_block”,“AboutSandwichCode”,“AboutSandwichCode.html#method-i-test_open_handles_the_file_sandwich_when_given_a_block”,“()”,“”],</a>,[“<a
+href="http://"test_parallel_assignments","AboutArrayAssignment","AboutArrayAssignment.html#method-i-test_parallel_assignments","()",""">test_parallel_assignment_with_one_variable”,“AboutArrayAssignment”,“AboutArrayAssignment.html#method-i-test_parallel_assignment_with_one_variable”,“()”,“”],</a>,[“<a
+href="http://"test_parallel_assignments_with_splat_operator","AboutArrayAssignment","AboutArrayAssignment.html#method-i-test_parallel_assignments_with_splat_operator","()",""">test_parallel_assignments_with_extra_values”,“AboutArrayAssignment”,“AboutArrayAssignment.html#method-i-test_parallel_assignments_with_extra_values”,“()”,“”],</a>,[“<a
+href="http://"test_parallel_assignments_with_too_few_variables","AboutArrayAssignment","AboutArrayAssignment.html#method-i-test_parallel_assignments_with_too_few_variables","()",""">test_parallel_assignments_with_subarrays”,“AboutArrayAssignment”,“AboutArrayAssignment.html#method-i-test_parallel_assignments_with_subarrays”,“()”,“”],</a>,[“<a
+href="http://"test_parentheses_group_contents","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_parentheses_group_contents","()",""">test_parentheses_also_capture_matched_content_by_number”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_parentheses_also_capture_matched_content_by_number”,“()”,“”],</a>,[“<a
+href="http://"test_period_is_a_shortcut_for_any_non_newline_character","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_period_is_a_shortcut_for_any_non_newline_character","()",""">test_pattern”,“Neo::Koan”,“Neo/Koan.html#method-c-test_pattern”,“()”,“”],</a>,[“<a
+href="http://"test_plus_equals_also_will_leave_the_original_string_unmodified","AboutStrings","AboutStrings.html#method-i-test_plus_equals_also_will_leave_the_original_string_unmodified","()",""">test_plus_concatenation_will_leave_the_original_strings_unmodified”,“AboutStrings”,“AboutStrings.html#method-i-test_plus_concatenation_will_leave_the_original_strings_unmodified”,“()”,“”],</a>,[“<a
+href="http://"test_plus_means_one_or_more","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_plus_means_one_or_more","()",""">test_plus_equals_will_concatenate_to_the_end_of_a_string”,“AboutStrings”,“AboutStrings.html#method-i-test_plus_equals_will_concatenate_to_the_end_of_a_string”,“()”,“”],</a>,[“<a
+href="http://"test_proxy_can_record_more_than_just_tv_objects","AboutProxyObjectProject","AboutProxyObjectProject.html#method-i-test_proxy_can_record_more_than_just_tv_objects","()",""">test_plus_will_concatenate_two_strings”,“AboutStrings”,“AboutStrings.html#method-i-test_plus_will_concatenate_two_strings”,“()”,“”],</a>,[“<a
+href="http://"test_proxy_handles_invalid_messages","AboutProxyObjectProject","AboutProxyObjectProject.html#method-i-test_proxy_handles_invalid_messages","()",""">test_proxy_counts_method_calls”,“AboutProxyObjectProject”,“AboutProxyObjectProject.html#method-i-test_proxy_counts_method_calls”,“()”,“”],</a>,[“<a
+href="http://"test_proxy_records_messages_sent_to_tv","AboutProxyObjectProject","AboutProxyObjectProject.html#method-i-test_proxy_records_messages_sent_to_tv","()",""">test_proxy_method_returns_wrapped_object”,“AboutProxyObjectProject”,“AboutProxyObjectProject.html#method-i-test_proxy_method_returns_wrapped_object”,“()”,“”],</a>,[“<a
+href="http://"test_pushing_and_popping_arrays","AboutArrays","AboutArrays.html#method-i-test_pushing_and_popping_arrays","()",""">test_proxy_reports_methods_have_been_called”,“AboutProxyObjectProject”,“AboutProxyObjectProject.html#method-i-test_proxy_reports_methods_have_been_called”,“()”,“”],</a>,[“<a
+href="http://"test_raising_a_particular_error","AboutExceptions","AboutExceptions.html#method-i-test_raising_a_particular_error","()",""">test_question_mark_means_optional”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_question_mark_means_optional”,“()”,“”],</a>,[“<a
+href="http://"test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6","AboutDiceProject","AboutDiceProject.html#method-i-test_rolling_the_dice_returns_a_set_of_integers_between_1_and_6","()",""">test_rescue_clause”,“AboutExceptions”,“AboutExceptions.html#method-i-test_rescue_clause”,“()”,“”],</a>,[“<a
+href="http://"test_scan_is_like_find_all","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_scan_is_like_find_all","()",""">test_scalene_triangles_have_no_equal_sides”,“AboutTriangleProject”,“AboutTriangleProject.html#method-i-test_scalene_triangles_have_no_equal_sides”,“()”,“”],</a>,[“<a
+href="http://"test_score_of_a_single_roll_of_5_is_50","AboutScoringProject","AboutScoringProject.html#method-i-test_score_of_a_single_roll_of_5_is_50","()",""">test_score_of_a_single_roll_of_1_is_100”,“AboutScoringProject”,“AboutScoringProject.html#method-i-test_score_of_a_single_roll_of_1_is_100”,“()”,“”],</a>,[“<a
+href="http://"test_score_of_an_empty_list_is_zero","AboutScoringProject","AboutScoringProject.html#method-i-test_score_of_an_empty_list_is_zero","()",""">test_score_of_a_triple_1_is_1000”,“AboutScoringProject”,“AboutScoringProject.html#method-i-test_score_of_a_triple_1_is_1000”,“()”,“”],</a>,[“<a
+href="http://"test_score_of_multiple_1s_and_5s_is_the_sum_of_individual_scores","AboutScoringProject","AboutScoringProject.html#method-i-test_score_of_multiple_1s_and_5s_is_the_sum_of_individual_scores","()",""">test_score_of_mixed_is_sum”,“AboutScoringProject”,“AboutScoringProject.html#method-i-test_score_of_mixed_is_sum”,“()”,“”],</a>,[“<a
+href="http://"test_score_of_single_2s_3s_4s_and_6s_are_zero","AboutScoringProject","AboutScoringProject.html#method-i-test_score_of_single_2s_3s_4s_and_6s_are_zero","()",""">test_score_of_other_triples_is_100x”,“AboutScoringProject”,“AboutScoringProject.html#method-i-test_score_of_other_triples_is_100x”,“()”,“”],</a>,[“<a
+href="http://"test_send_with_underscores_will_also_send_messages","AboutMessagePassing","AboutMessagePassing.html#method-i-test_send_with_underscores_will_also_send_messages","()",""">test_select_selects_certain_items_from_an_array”,“AboutIteration”,“AboutIteration.html#method-i-test_select_selects_certain_items_from_an_array”,“()”,“”],</a>,[“<a
+href="http://"test_sending_undefined_messages_to_a_typical_object_results_in_errors","AboutMessagePassing","AboutMessagePassing.html#method-i-test_sending_undefined_messages_to_a_typical_object_results_in_errors","()",""">test_sending_a_message_with_arguments”,“AboutMessagePassing”,“AboutMessagePassing.html#method-i-test_sending_a_message_with_arguments”,“()”,“”],</a>,[“<a
+href="http://"test_shortcut_character_classes_are_negated_with_capitals","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_shortcut_character_classes_are_negated_with_capitals","()",""">test_shifting_arrays”,“AboutArrays”,“AboutArrays.html#method-i-test_shifting_arrays”,“()”,“”],</a>,[“<a
+href="http://"test_single_quoted_string_do_not_interpret_escape_characters","AboutStrings","AboutStrings.html#method-i-test_single_quoted_string_do_not_interpret_escape_characters","()",""">test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_since_classes_are_objects_you_can_define_singleton_methods_on_them_too”,“()”,“”],</a>,[“<a
+href="http://"test_single_quoted_strings_do_not_interpolate","AboutStrings","AboutStrings.html#method-i-test_single_quoted_strings_do_not_interpolate","()",""">test_single_quoted_strings_are_also_strings”,“AboutStrings”,“AboutStrings.html#method-i-test_single_quoted_strings_are_also_strings”,“()”,“”],</a>,[“<a
+href="http://"test_slash_a_anchors_to_the_start_of_the_string","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_slash_a_anchors_to_the_start_of_the_string","()",""">test_single_quotes_sometimes_interpret_escape_characters”,“AboutStrings”,“AboutStrings.html#method-i-test_single_quotes_sometimes_interpret_escape_characters”,“()”,“”],</a>,[“<a
+href="http://"test_slash_d_is_a_shortcut_for_a_digit_character_class","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_slash_d_is_a_shortcut_for_a_digit_character_class","()",""">test_slash_b_anchors_to_a_word_boundary”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_slash_b_anchors_to_a_word_boundary”,“()”,“”],</a>,[“<a
+href="http://"test_slash_w_is_a_shortcut_for_a_word_character_class","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_slash_w_is_a_shortcut_for_a_word_character_class","()",""">test_slash_s_is_a_shortcut_for_a_whitespace_character_class”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_slash_s_is_a_shortcut_for_a_whitespace_character_class”,“()”,“”],</a>,[“<a
+href="http://"test_slicing_arrays","AboutArrays","AboutArrays.html#method-i-test_slicing_arrays","()",""">test_slash_z_anchors_to_the_end_of_the_string”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_slash_z_anchors_to_the_end_of_the_string”,“()”,“”],</a>,[“<a
+href="http://"test_small_integers_have_fixed_ids","AboutObjects","AboutObjects.html#method-i-test_small_integers_have_fixed_ids","()",""">test_slicing_with_ranges”,“AboutArrays”,“AboutArrays.html#method-i-test_slicing_with_ranges”,“()”,“”],</a>,[“<a
+href="http://"test_some_ruby_objects_can_be_coerced_to_java","AboutJavaInterop","AboutJavaInterop.html#method-i-test_some_ruby_objects_can_be_coerced_to_java","()",""">test_some_ruby_objects_are_not_coerced_to_what_you_might_expect”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_some_ruby_objects_are_not_coerced_to_what_you_might_expect”,“()”,“”],</a>,[“test_sometimes_missing_parentheses_are_ambiguous”,“AboutMethods”,“AboutMethods.html#method-i-test_sometimes_missing_parentheses_are_ambiguous”,“()”,“&lt;p&gt;(NOTE:
+We are Using eval below because the example code is considered to
+bensyntactically <a
+href="http://"test_stand_alone_blocks_can_be_passed_to_methods_expecting_blocks","AboutBlocks","AboutBlocks.html#method-i-test_stand_alone_blocks_can_be_passed_to_methods_expecting_blocks","()",""">invalid).n”],</a>,[“<a
+href="http://"test_strings_can_be_joined","AboutStrings","AboutStrings.html#method-i-test_strings_can_be_joined","()",""">test_strings_are_unique_objects”,“AboutStrings”,“AboutStrings.html#method-i-test_strings_are_unique_objects”,“()”,“”],</a>,[“<a
+href="http://"test_strings_can_be_split_with_different_patterns","AboutStrings","AboutStrings.html#method-i-test_strings_can_be_split_with_different_patterns","()",""">test_strings_can_be_split”,“AboutStrings”,“AboutStrings.html#method-i-test_strings_can_be_split”,“()”,“”],</a>,[“<a
+href="http://"test_subclasses_add_new_behavior","AboutInheritance","AboutInheritance.html#method-i-test_subclasses_add_new_behavior","()",""">test_sub_is_like_find_and_replace”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_sub_is_like_find_and_replace”,“()”,“”],</a>,[“<a
+href="http://"test_subclasses_can_modify_existing_behavior","AboutInheritance","AboutInheritance.html#method-i-test_subclasses_can_modify_existing_behavior","()",""">test_subclasses_can_invoke_parent_behavior_via_super”,“AboutInheritance”,“AboutInheritance.html#method-i-test_subclasses_can_invoke_parent_behavior_via_super”,“()”,“”],</a>,[“<a
+href="http://"test_subclasses_inherit_behavior_from_parent_class","AboutInheritance","AboutInheritance.html#method-i-test_subclasses_inherit_behavior_from_parent_class","()",""">test_subclasses_have_the_parent_as_an_ancestor”,“AboutInheritance”,“AboutInheritance.html#method-i-test_subclasses_have_the_parent_as_an_ancestor”,“()”,“”],</a>,[“<a
+href="http://"test_super_does_not_work_cross_method","AboutInheritance","AboutInheritance.html#method-i-test_super_does_not_work_cross_method","()",""">test_subclasses_inherit_constants_from_parent_classes”,“AboutConstants”,“AboutConstants.html#method-i-test_subclasses_inherit_constants_from_parent_classes”,“()”,“”],</a>,[“<a
+href="http://"test_symbols_are_not_strings","AboutSymbols","AboutSymbols.html#method-i-test_symbols_are_not_strings","()",""">test_swapping_with_parallel_assignment”,“AboutArrayAssignment”,“AboutArrayAssignment.html#method-i-test_swapping_with_parallel_assignment”,“()”,“”],</a>,[“<a
+href="http://"test_symbols_can_be_compared","AboutSymbols","AboutSymbols.html#method-i-test_symbols_can_be_compared","()",""">test_symbols_are_symbols”,“AboutSymbols”,“AboutSymbols.html#method-i-test_symbols_are_symbols”,“()”,“”],</a>,[“<a
+href="http://"test_symbols_can_be_made_from_strings","AboutSymbols","AboutSymbols.html#method-i-test_symbols_can_be_made_from_strings","()",""">test_symbols_can_be_dynamically_created”,“AboutSymbols”,“AboutSymbols.html#method-i-test_symbols_can_be_dynamically_created”,“()”,“”],</a>,[“test_symbols_cannot_be_concatenated”,“AboutSymbols”,“AboutSymbols.html#method-i-test_symbols_cannot_be_concatenated”,“()”,“&lt;p&gt;It&amp;#39;s
+important to realize that symbols are not “immutable strings”,nthough they
+are immutable. …<a
+href=”http://“test_symbols_do_not_have_string_methods”,“AboutSymbols”,“AboutSymbols.html#method-i-test_symbols_do_not_have_string_methods”,“()”,“”“>n”],</a>,[“<a
+href="http://"test_symbols_with_spaces_can_be_built","AboutSymbols","AboutSymbols.html#method-i-test_symbols_with_spaces_can_be_built","()",""">test_symbols_with_interpolation_can_be_built”,“AboutSymbols”,“AboutSymbols.html#method-i-test_symbols_with_interpolation_can_be_built”,“()”,“”],</a>,[“<a
+href="http://"test_the_shovel_operator_modifies_the_original_string","AboutStrings","AboutStrings.html#method-i-test_the_shovel_operator_modifies_the_original_string","()",""">test_the_left_most_match_wins”,“AboutRegularExpressions”,“AboutRegularExpressions.html#method-i-test_the_left_most_match_wins”,“()”,“”],</a>,[“<a
+href="http://"test_times_statement","AboutControlStatements","AboutControlStatements.html#method-i-test_times_statement","()",""">test_the_shovel_operator_will_also_append_content_to_a_string”,“AboutStrings”,“AboutStrings.html#method-i-test_the_shovel_operator_will_also_append_content_to_a_string”,“()”,“”],</a>,[“<a
+href="http://"test_to_s_is_used_in_string_interpolation","AboutClasses","AboutClasses.html#method-i-test_to_s_is_used_in_string_interpolation","()",""">test_to_s_is_called_on_interpolated_symbols”,“AboutSymbols”,“AboutSymbols.html#method-i-test_to_s_is_called_on_interpolated_symbols”,“()”,“”],</a>,[“<a
+href="http://"test_to_s_returns_a_string_representation","AboutToStr","AboutToStr.html#method-i-test_to_s_returns_a_string_representation","()",""">test_to_s_provides_a_string_version_of_the_object”,“AboutClasses”,“AboutClasses.html#method-i-test_to_s_provides_a_string_version_of_the_object”,“()”,“”],</a>,[“<a
+href="http://"test_to_str_also_returns_a_string_representation","AboutToStr","AboutToStr.html#method-i-test_to_str_also_returns_a_string_representation","()",""">test_to_str_allows_objects_to_be_treated_as_strings”,“AboutToStr”,“AboutToStr.html#method-i-test_to_str_allows_objects_to_be_treated_as_strings”,“()”,“”],</a>,[“<a
+href="http://"test_true_is_treated_as_true","AboutTrueAndFalse","AboutTrueAndFalse.html#method-i-test_true_is_treated_as_true","()",""">test_top_level_constants_are_referenced_by_double_colons”,“AboutConstants”,“AboutConstants.html#method-i-test_top_level_constants_are_referenced_by_double_colons”,“()”,“”],</a>,[“<a
+href="http://"test_unless_statement","AboutControlStatements","AboutControlStatements.html#method-i-test_unless_statement","()",""">test_tv_methods_still_perform_their_function”,“AboutProxyObjectProject”,“AboutProxyObjectProject.html#method-i-test_tv_methods_still_perform_their_function”,“()”,“”],</a>,[“<a
+href="http://"test_unless_statement_modifier","AboutControlStatements","AboutControlStatements.html#method-i-test_unless_statement_modifier","()",""">test_unless_statement_evaluate_true”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_unless_statement_evaluate_true”,“()”,“”],</a>,[“<a
+href="http://"test_use_double_quotes_to_create_strings_with_single_quotes","AboutStrings","AboutStrings.html#method-i-test_use_double_quotes_to_create_strings_with_single_quotes","()",""">test_use_backslash_for_those_hard_cases”,“AboutStrings”,“AboutStrings.html#method-i-test_use_backslash_for_those_hard_cases”,“()”,“”],</a>,[“<a
+href="http://"test_use_single_quotes_to_create_string_with_double_quotes","AboutStrings","AboutStrings.html#method-i-test_use_single_quotes_to_create_string_with_double_quotes","()",""">test_use_flexible_quoting_to_handle_really_hard_cases”,“AboutStrings”,“AboutStrings.html#method-i-test_use_flexible_quoting_to_handle_really_hard_cases”,“()”,“”],</a>,[“<a
+href="http://"test_user_defined_code_can_check_for_to_str","AboutToStr","AboutToStr.html#method-i-test_user_defined_code_can_check_for_to_str","()",""">test_use_the_prefix_scope_operator_to_force_the_global_scope”,“AboutScope”,“AboutScope.html#method-i-test_use_the_prefix_scope_operator_to_force_the_global_scope”,“()”,“”],</a>,[“<a
+href="http://"test_variables_can_also_be_used_to_access_captures","AboutRegularExpressions","AboutRegularExpressions.html#method-i-test_variables_can_also_be_used_to_access_captures","()",""">test_using_a_java_library_class”,“AboutJavaInterop”,“AboutJavaInterop.html#method-i-test_using_a_java_library_class”,“()”,“”],</a>,[“<a
+href="http://"test_who_wins_with_both_nested_and_inherited_constants","AboutConstants","AboutConstants.html#method-i-test_who_wins_with_both_nested_and_inherited_constants","()",""">test_while_statement”,“AboutControlStatements”,“AboutControlStatements.html#method-i-test_while_statement”,“()”,“”],</a>,[“<a
+href="http://"test_you_can_create_accessor_methods_to_return_instance_variables","AboutClasses","AboutClasses.html#method-i-test_you_can_create_accessor_methods_to_return_instance_variables","()",""">test_who_wins_with_explicit_scoping_on_class_definition”,“AboutConstants”,“AboutConstants.html#method-i-test_who_wins_with_explicit_scoping_on_class_definition”,“()”,“”],</a>,[“<a
+href="http://"test_you_can_define_methods_on_individual_objects","AboutClassMethods","AboutClassMethods.html#method-i-test_you_can_define_methods_on_individual_objects","()",""">test_you_can_define_class_methods_inside_the_class”,“AboutClassMethods”,“AboutClassMethods.html#method-i-test_you_can_define_class_methods_inside_the_class”,“()”,“”],</a>,[“<a
+href="http://"test_you_can_get_a_single_character_from_a_string","AboutStrings","AboutStrings.html#method-i-test_you_can_get_a_single_character_from_a_string","()",""">test_you_can_get_a_list_of_constants_for_any_class_or_module”,“AboutScope”,“AboutScope.html#method-i-test_you_can_get_a_list_of_constants_for_any_class_or_module”,“()”,“”],</a>,[“<a
+href="http://"test_you_can_politely_ask_for_instance_variable_values","AboutClasses","AboutClasses.html#method-i-test_you_can_politely_ask_for_instance_variable_values","()",""">test_you_can_get_a_substring_from_a_string”,“AboutStrings”,“AboutStrings.html#method-i-test_you_can_get_a_substring_from_a_string”,“()”,“”],</a>,[“<a
+href="http://"test_you_can_rip_the_value_out_using_instance_eval","AboutClasses","AboutClasses.html#method-i-test_you_can_rip_the_value_out_using_instance_eval","()",""">test_you_can_reference_nested_classes_using_the_scope_operator”,“AboutScope”,“AboutScope.html#method-i-test_you_can_reference_nested_classes_using_the_scope_operator”,“()”,“”],</a>,[“<a
+href="http://"test_you_dont_get_null_pointer_errors_when_calling_methods_on_nil","AboutNil","AboutNil.html#method-i-test_you_dont_get_null_pointer_errors_when_calling_methods_on_nil","()",""">test_you_can_roll_different_numbers_of_dice”,“AboutDiceProject”,“AboutDiceProject.html#method-i-test_you_can_roll_different_numbers_of_dice”,“()”,“”],</a>,[“testmethods”,“Neo::Koan”,“Neo/Koan.html#method-c-testmethods”,“()”,“&lt;p&gt;Lazy
+initialize list of test <a
+href=""tests_disabled?","Neo::Koan","Neo/Koan.html#method-c-tests_disabled-3F","()",""">methods.n”],</a>,[“<a
+href=""to_s","AboutToStr::CanBeTreatedAsString","AboutToStr/CanBeTreatedAsString.html#method-i-to_s","()",""">to_s”,“AboutClasses::Dog7”,“AboutClasses/Dog7.html#method-i-to_s”,“()”,“”],</a>,[“<a
+href=""to_str","AboutToStr::CanBeTreatedAsString","AboutToStr/CanBeTreatedAsString.html#method-i-to_str","()",""">to_s”,“AboutToStr::CanNotBeTreatedAsString”,“AboutToStr/CanNotBeTreatedAsString.html#method-i-to_s”,“()”,“”],</a>,[“total_tests”,“Neo::Koan”,“Neo/Koan.html#method-c-total_tests”,“()”,“”],[“triangle”,“Object”,“Object.html#method-i-triangle”,“(a,
+b, c)”,“&lt;p&gt;Triangle analyzes the lengths of the sides of a triangle
+(represented by a,nb and c) and returns the …<a
+href=”http://“truth_value”,“AboutTrueAndFalse”,“AboutTrueAndFalse.html#method-i-truth_value”,“(condition)”,“”“>n”],</a>,[“<a
+href=""using_win32console","Neo::Color","Neo/Color.html#method-i-using_win32console","()",""">use_colors?”,“Neo::Color”,“Neo/Color.html#method-i-use_colors-3F”,“()”,“”],</a>,[“<a
+href=""wag","AboutClassMethods::Dog2","AboutClassMethods/Dog2.html#method-c-wag","()",""">using_windows?”,“Neo::Color”,“Neo/Color.html#method-i-using_windows-3F”,“()”,“”],</a>,[“<a
+href=""wag","AboutInheritance::Chihuahua","AboutInheritance/Chihuahua.html#method-i-wag","()",""">wag”,“AboutClassMethods::Dog2”,“AboutClassMethods/Dog2.html#method-i-wag”,“()”,“”],</a>,[“<a
+href=""walk","Neo::ThePath","Neo/ThePath.html#method-i-walk","()",""">wag”,“AboutOpenClasses::Dog”,“AboutOpenClasses/Dog.html#method-i-wag”,“()”,“”],</a>,[“yield_tester”,“AboutBlocks”,“AboutBlocks.html#method-i-yield_tester”,“()”,“”],[“GREED_RULES”,“”,“GREED_RULES_txt.html”,“”,“&lt;p&gt;Playing
+Greedn&lt;p&gt;Greed is a dice game played among 2 or more players, using 5
+six-sidedndice.n&lt;p&gt;Playing Greed …<a
+href=”http://“README”,“”,“README_md.html”,“”,“<p>rubyKoansn”“>n”],</a>,[“README”,“”,“README_rdoc.html”,“”,“&lt;p&gt;Neo
+Ruby Koansn&lt;p&gt;The Ruby Koans walk you along the path to enlightenment
+in order to learnnRuby. The goal …<a
+href=”http://“created.rid”,“”,“doc/created_rid.html”,“”,“”“>n”],</a>,[“example_file”,“”,“example_file_txt.html”,“”,“&lt;p&gt;this
+is a testn”],[“koans.watchr”,“”,“koans_watchr.html”,“”,“&lt;p&gt;watch(
+&amp;#39;.*.rb&amp;#39; ) donn&lt;pre&gt;system
+&amp;#39;rake&amp;#39;&lt;/pre&gt;n&lt;p&gt;endn”]]}}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
