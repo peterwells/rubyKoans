@@ -126,15 +126,16 @@ class AboutMethods < Neo::Koan
   # ------------------------------------------------------------------
 
   class Dog
-    def name
-	"Fido"
-    end
+
     private
 
     def tail
       "tail"
     end
-    
+
+    def name
+	"Fido"
+    end
   end
 
   def test_calling_methods_in_other_objects_require_explicit_receiver
