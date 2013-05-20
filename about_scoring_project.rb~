@@ -38,7 +38,6 @@ def score(dice)
 	  elsif dice[0] == 1 then
 		  return 100
 	  end
-  end
 end
 
 class AboutScoringProject < Neo::Koan

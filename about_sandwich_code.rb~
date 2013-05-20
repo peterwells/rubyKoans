@@ -66,8 +66,8 @@ class AboutSandwichCode < Neo::Koan
   def count_lines2(file_name)
 	meat = lambda {|file| 
 		count = 0 
-		while file.gets
-			count += 1 
+		while 
+			file.gets count += 1 
 		end 
 		count 
 	}

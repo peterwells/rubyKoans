@@ -14,7 +14,7 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  if(a+b <= c) or (a+c <= b) or (b+c <= a) then
+  if(a+b >= c) or (a+c >= b) or (b+c >= a) then
 	  raise TriangleError, "Impossible dimensions"
   end
 
