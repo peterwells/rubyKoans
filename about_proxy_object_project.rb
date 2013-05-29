@@ -13,52 +13,42 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # of the Proxy class is given in the AboutProxyObjectProject koan.
 
 class Proxy
-  attr_reader :channel
-  attr_accessor :messages
-
-  def initialize(target_object)
-    @object = target_object
-    # ADD MORE CODE HERE
-    @messages = []
-
-    def @object.power 
-      @object.on = !@object.on
-    end
-
-    def @object.on?
-      @object.on
-    end
-
-    def @object.channel=(ch)
-      @object.channel = ch
-    end
-
-    def @object.channel
-      @object.channel
-    end
-
-    return self
+	def initialize(target_object)
+		@object = target_object
+	
+	# ADD MORE CODE HERE
+		@object.class.module_eval {attr_reader :messages}
+		
+		def @object.messages=(m)
+			if @messages.class != Array then
+				@messages = []
+			end
+			if m != :messages then
+				@messages.push(m)
+			end
+		end
+		
+		def @object.called?(m)
+			@messages.include?(m)
+		end
+		
+		def @object.number_of_times_called(m)
+			@messages.count(m)
+		end
+	
+	return self
   end
 
   # WRITE CODE HERE
-  #def power
-  #  @on = !@on
-  #  @messages.insert(-1, :power)
-  #end
-
-  #def on?
-  #  @messages.insert(-1, :on?)
-  #  @on
-  #end
-
-  #def channel=(ch)
-  #  @messages.insert(-1, :channel=)
-  #  @channel = ch
-  #end
-
-  def called?(methodName, args)
-    return @object.methods(methodName, args)
+  def method_missing(method_name, *args, &block)
+	if @object.respond_to?(method_name) then
+		@object.messages = method_name
+		@object.send(method_name, *args, &block)
+	else
+		super(method_name, *args, &block)
+	end
   end
+ 
 end
 
 # The proxy object should pass the following Koan:
